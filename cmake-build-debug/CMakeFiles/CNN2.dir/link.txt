@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/CNN2.dir/examples/Forward_step_testing.cpp.o -o CNN2 
