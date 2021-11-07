@@ -65,9 +65,9 @@ int main(){
     std::vector<double> backprop_2 = fully_2.backward_step(backprop_1);
     std::vector<double> backprop_3 = fully_1.backward_step(backprop_2);
 
-    for (int i = 0;i<100;i++) {
-        fully_1.setter_learning_rate(1);
-        fully_2.setter_learning_rate(1);
+    for (int i = 0;i<10000;i++) {
+        fully_1.setter_learning_rate(0.1);
+        fully_2.setter_learning_rate(0.1);
         random_number = rand() % 4;
         temp1 = fully_1.forward_step(features[random_number]);
         temp2 = fully_2.forward_step(temp1);
@@ -77,7 +77,7 @@ int main(){
         loss = outputLayer.compute_loss(labels[random_number], vect);
 
         std::cout << "loss: " << loss << std::endl;
-        std::cout << "out: " << out << std::endl;
+        //std::cout << "out: " << out << std::endl;
         std::cout << "The overall loss is: " << kkkk(features,labels,fully_1,fully_2,outputLayer) << std::endl;
 
 
