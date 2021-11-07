@@ -5,6 +5,10 @@
 #ifndef CNNS_MATRIX_COMPUTATIONS_H
 #define CNNS_MATRIX_COMPUTATIONS_H
 #include "vector"
+#include <random>
+#include "assert.h"
+#include "iostream"
+#include "image_processing.h"
 
 /**
  * Routine which computes Matrix*Vector
@@ -46,6 +50,15 @@ std::vector<std::vector<double>> add_matrices(std::vector<std::vector<double>> m
  */
 std::vector<std::vector<double>> matrix_scalar(std::vector<std::vector<double>> matrix, double scalar);
 
+/**This routine is able to multiply two vectors elementwise
+ *
+ * @param input_vector_1 : target onto which computations are apllied
+ * @param input_vector_2 : second vector
+ * @param scalar : scalar to multiply result
+ * @return returns input_vector_1 * input_vector_2 * scalar
+ */
+std::vector<double> vector_multiplication_elementwise(std::vector<double> input_vector_1, std::vector<double> input_vector_2, double scalar);
+
 /**This routine is able to add a scalar times a vector onto a given vector
  *
  * @param input_vector_1 : target onto which computations are apllied
@@ -53,7 +66,24 @@ std::vector<std::vector<double>> matrix_scalar(std::vector<std::vector<double>> 
  * @param scalar : scalar to multiply onto vector_2
  * @return returns input_vector_1 + scalar times input_vector_2
  */
-std::vector<double> vector_computations(std::vector<double> input_vector_1, std::vector<double> input_vector_2, double scalar);
+std::vector<double> vector_additions(std::vector<double> input_vector_1, std::vector<double> input_vector_2, double scalar);
+
+/**This function returns a vector filled with random values
+ *
+ * @param rows : number of rows of random vector
+ * @param range : random numbers between 0 and @param range
+ * @return random output vector
+ */
+std::vector<double> random_vector(int rows, double range);
+
+/**This function returns a matrix filled with random values
+ *
+ * @param rows : number of rows of random matrix
+ * @param cols : number of columns of random matrix
+ * @param range : random numbers between 0 and @param range
+ * @return random output matrix
+ */
+std::vector<std::vector<double>> random_matrix(int rows, int cols, double range);
 
 
 #endif //CNNS_MATRIX_COMPUTATIONS_H

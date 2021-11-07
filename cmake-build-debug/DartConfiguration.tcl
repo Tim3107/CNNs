@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/tim/Tim/CNNs
-BuildDirectory: /home/tim/Tim/CNNs/cmake-build-debug
+SourceDirectory: /home/tim/Tim/CNN_folder/CNNs
+BuildDirectory: /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/snap/clion/169/bin/cmake/linux/bin/cmake" "/home/tim/Tim/CNNs"
-MakeCommand: /snap/clion/164/bin/cmake/linux/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/snap/clion/169/bin/cmake/linux/bin/cmake" "/home/tim/Tim/CNN_folder/CNNs"
+MakeCommand: /snap/clion/169/bin/cmake/linux/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -44,7 +44,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -57,9 +57,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: /usr/bin/git
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/c++

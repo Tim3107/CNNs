@@ -5,41 +5,41 @@
 		<Option title="CNNs"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\functions\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\functions\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Examples">
-				<Option output="/home/tim/Tim/CNNs/cmake-build-debug/Examples" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+			<Target title="Simple_Testing">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Simple_Testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Examples"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Simple_Testing"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Examples/fast">
-				<Option output="/home/tim/Tim/CNNs/cmake-build-debug/Examples" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+			<Target title="Simple_Testing/fast">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Simple_Testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,35 +77,173 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Examples/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Simple_Testing/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Xor_Problems">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Xor_Problems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Xor_Problems"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Xor_Problems/fast">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Xor_Problems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Xor_Problems/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Examples_backward">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Examples_backward" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Examples_backward"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Examples_backward/fast">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Examples_backward" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Examples_backward/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Examples_forward">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Examples_forward" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Examples_forward"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Examples_forward/fast">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Examples_forward" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Examples_forward/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Nightly">
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Continuous">
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CNNs">
-				<Option output="/home/tim/Tim/CNNs/cmake-build-debug/CNNs" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CNNs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -120,15 +258,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 CNNs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 CNNs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CNNs/fast">
-				<Option output="/home/tim/Tim/CNNs/cmake-build-debug/CNNs" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CNNs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -143,175 +281,288 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 CNNs/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 CNNs/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Experimental">
-				<Option working_dir="/home/tim/Tim/CNNs/cmake-build-debug"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tim/Tim/CNNs/FCC.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/FCC.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/FCC.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/FCC.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Filter.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Filter.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Filter_ensemble.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter_ensemble.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Filter_ensemble.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter_ensemble.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Filter_layer.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter_layer.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Filter_layer.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter_layer.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Matrix_computations.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Matrix_computations.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Matrix_computations.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Matrix_computations.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Save_load_image_label_pairs.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Save_load_image_label_pairs.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/Save_load_image_label_pairs.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Save_load_image_label_pairs.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/examples/Forward_step_testing.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/examples/Backward_step_testing.cpp">
+			<Option target="Examples_backward"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/extract_images.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/examples/Forward_step_testing.cpp">
+			<Option target="Examples_forward"/>
+		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/examples/simple_test.cpp">
+			<Option target="Simple_Testing"/>
+		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/examples/xor_Problem.cpp">
+			<Option target="Xor_Problems"/>
+		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/extract_images.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/extract_images.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/extract_images.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/ReLu.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/MSE.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/ReLu.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/MSE.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/cross_entropy.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/ReLu.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/cross_entropy.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/ReLu.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/sigmoid.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/cross_entropy.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/sigmoid.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/cross_entropy.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/softmax.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/sigmoid.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/softmax.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/sigmoid.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/image_label_pair.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/softmax.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/image_label_pair.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/softmax.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/image_processing.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/image_label_pair.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/image_processing.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/image_label_pair.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/main.cpp">
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/image_processing.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/max_pooling.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/image_processing.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/max_pooling.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/main.cpp">
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/output_layer.cpp">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/max_pooling.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/output_layer.h">
-			<Option target="Examples"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/max_pooling.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
 			<Option target="CNNs"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/CMakeLists.txt">
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/output_layer.cpp">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
+			<Option target="CNNs"/>
+		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/output_layer.h">
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
+			<Option target="CNNs"/>
+		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/home/tim/Tim/CNNs/functions/CMakeLists.txt">
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\functions\"/>
 		</Unit>
 	</Project>

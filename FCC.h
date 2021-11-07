@@ -6,6 +6,8 @@
 #define CNNS_FCC_H
 
 #include <vector>
+#include <random>
+#include "image_processing.h"
 #include <string>
 #include "Matrix_computations.h"
 #include "functions/sigmoid.h"
@@ -23,6 +25,7 @@ class FCC{
     std::vector<std::vector<double>> weight_matrix;
     std::vector<double> bias;
     std::vector<double> input;
+    std::vector<double> temp_affin;
     std::vector<double> output;
 private:
 
@@ -77,11 +80,26 @@ public:
     //std::tuple<std::vector<std::vector<double>>,std::vector<double>>
     std::vector<double> backward_step(std::vector<double> input_successor);
 
-    /** This method returns weight-matrix and bias. Important for final step.
+    /**This routine computes all the relevant components in terms of backpropagation
      *
-     * @return weight matrix and bias
+    * @param input_successor : Input vector of successor layer in Feed-Forward NN. Important due to back propagating
+    * error through net
+     * @param input_vec : input vector can be set explicitly
+    * @return
+    */
+    std::vector<double> backward_step(std::vector<double> input_successor,std::vector<double> input_vec);
+
+    /** This method returns bias. Important for final step.
+    *
+    * @return bias
+    */
+    std::vector<double> getter_vector();
+
+    /** This method returns weight-matrix. Important for final step.
+     *
+     * @return weight matrix
      */
-    std::tuple<std::vector<std::vector<double>>,std::vector<double>> getter();
+    std::vector<std::vector<double>> getter_matrix();
 
     /**This method is a setter method, which sets a new learning rate important for gradient descent
      *

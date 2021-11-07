@@ -1,4 +1,4 @@
-# Install script for directory: /home/tim/Tim/CNNs/functions
+# Install script for directory: /home/tim/Tim/CNN_folder/CNNs/functions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

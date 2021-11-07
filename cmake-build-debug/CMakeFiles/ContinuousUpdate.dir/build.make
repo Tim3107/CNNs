@@ -53,10 +53,10 @@ RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tim/Tim/CNNs
+CMAKE_SOURCE_DIR = /home/tim/Tim/CNN_folder/CNNs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tim/Tim/CNNs/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug
 
 # Utility rule file for ContinuousUpdate.
 
@@ -82,6 +82,6 @@ CMakeFiles/ContinuousUpdate.dir/clean:
 .PHONY : CMakeFiles/ContinuousUpdate.dir/clean
 
 CMakeFiles/ContinuousUpdate.dir/depend:
-	cd /home/tim/Tim/CNNs/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tim/Tim/CNNs /home/tim/Tim/CNNs /home/tim/Tim/CNNs/cmake-build-debug /home/tim/Tim/CNNs/cmake-build-debug /home/tim/Tim/CNNs/cmake-build-debug/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tim/Tim/CNN_folder/CNNs /home/tim/Tim/CNN_folder/CNNs /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousUpdate.dir/depend
 

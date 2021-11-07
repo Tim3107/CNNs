@@ -30,6 +30,11 @@ cv::Mat1f conversion_to_Mat(std::vector<std::vector<double>> input_array);
  */
 void display_array(std::vector<std::vector<double>> input_array);
 
+/**Method displays vector
+ *
+ * @param input_vector : vector of interest
+ */
+void display_vector(std::vector<double> input_vector);
 /** @brief method which converts std::vector of strings to doubles
  *
  * @param pointLine

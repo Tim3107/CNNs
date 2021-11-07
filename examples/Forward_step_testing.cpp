@@ -20,7 +20,7 @@ using namespace std;
 
 int main(){
     std::cout << "Examples are tested " << std::endl;
-    Image_extractor image_extractor("/home/tim/Tim/CNNs/Pictures_Testing/","",1,1,40,40);
+    Image_extractor image_extractor("/home/tim/Tim/CNN_folder/CNNs/Pictures_Testing/","",1,1,40,40);
     Image_label_pair* imageandlabel= new Image_label_pair[1];
     image_extractor.run_extractor(imageandlabel);
 
@@ -67,6 +67,7 @@ int main(){
 
     std::cout << xxxx.size()<<" "<< xxxx[0].size()<<" "<<xxxx[0][0].size()<<"Hier Sizes"<< "xxxx" <<std::endl;
 
+
     std::vector<double> fully_1 = fully_layer_1.forward_step(xxxx);
     for (int i = 0;i<fully_1.size();i++){
         std::cout << fully_1[i]<<" ";
@@ -76,5 +77,18 @@ int main(){
     for (int i = 0;i<fully_2.size();i++){
         std::cout << fully_2[i]<<" ";
     }
+
+    Output_layer outputLayer(3,3 ,"cross_entropy","softmax");
+
+
+
+    std::vector<double> output_probs  = outputLayer.forward_step(fully_2);
+
+    std::cout <<" "<< std::endl;
+
+    for (int i = 0;i<output_probs.size();i++){
+        std::cout << output_probs[i]<<" ";
+    }
+
     return 0;
 };

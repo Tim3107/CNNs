@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Examples.dir/Filter_layer.cpp.o"
   "CMakeFiles/Examples.dir/Matrix_computations.cpp.o"
   "CMakeFiles/Examples.dir/Save_load_image_label_pairs.cpp.o"
+  "CMakeFiles/Examples.dir/examples/Backward_step_testing.cpp.o"
   "CMakeFiles/Examples.dir/examples/Forward_step_testing.cpp.o"
   "CMakeFiles/Examples.dir/extract_images.cpp.o"
   "CMakeFiles/Examples.dir/functions/ReLu.cpp.o"

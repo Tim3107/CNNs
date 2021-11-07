@@ -1,4 +1,4 @@
-/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/tim/Tim/CNNs
+/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/tim/Tim/CNN_folder/CNNs
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/tim/Tim/CNNs/cmake-build-debug
+-- Build files have been written to: /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug

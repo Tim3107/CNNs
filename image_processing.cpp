@@ -36,15 +36,20 @@ cv::Mat1f conversion_to_Mat(std::vector<std::vector<double>> input_array){
 }
 
 void display_array(std::vector<std::vector<double>> input_array){
-    std::cout << "HOHO587"<<std::endl;
     int rows = input_array.size();
     int cols = input_array[0].size();
-    std::cout << rows<<cols<<std::endl;
     for (int i = 0;i<rows;i++){
         for (int j = 0;j<cols;j++){
             std::cout << input_array[i][j]<< " ";
         }
         std::cout << "   "<< std::endl;
+    }
+}
+
+void display_vector(std::vector<double> input_vector){
+    int rows = input_vector.size();
+    for (int i = 0;i<rows;i++){
+            std::cout << input_vector[i]<< " ";
     }
 }
 

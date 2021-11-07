@@ -9,6 +9,8 @@
 #include "string"
 #include "functions/softmax.h"
 #include "functions/cross_entropy.h"
+#include "Matrix_computations.h"
+#include "functions/MSE.h"
 
 
 class Output_layer{
@@ -44,7 +46,21 @@ public:
     /**This routine computes the loss given the labels and the output of the hidden layers
      * The loss is stored in this class with the specifier "loss".
      */
-    void compute_loss(std::vector<double> target_values);
+    double compute_loss(std::vector<double> target_values);
+
+    /**This routine computes the loss given the labels and the output of the hidden layers whereas the output is here given from outside the class
+    * The loss is stored in this class with the specifier "loss".
+    */
+    double compute_loss(std::vector<double> target_values, std::vector<double> given_output);
+
+    /**This routine computes all the relevant components in terms of backpropagation
+    *
+    * @param label : Label given from data
+    * @param output_prediction : from forward pass created output of Neural Net
+    * @return
+    */
+    //std::tuple<std::vector<std::vector<double>>,std::vector<double>>
+    std::vector<double> backward_step(std::vector<double> label);
 };
 
 

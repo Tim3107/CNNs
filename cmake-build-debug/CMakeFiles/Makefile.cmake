@@ -59,7 +59,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Examples.dir/DependInfo.cmake"
+  "CMakeFiles/Simple_Testing.dir/DependInfo.cmake"
+  "CMakeFiles/Xor_Problems.dir/DependInfo.cmake"
+  "CMakeFiles/Examples_backward.dir/DependInfo.cmake"
+  "CMakeFiles/Examples_forward.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousTest.dir/DependInfo.cmake"

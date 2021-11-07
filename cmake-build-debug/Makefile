@@ -57,10 +57,10 @@ RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tim/Tim/CNNs
+CMAKE_SOURCE_DIR = /home/tim/Tim/CNN_folder/CNNs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tim/Tim/CNNs/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,9 +97,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNNs/cmake-build-debug/CMakeFiles /home/tim/Tim/CNNs/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNNs/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,17 +127,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Examples
+# Target rules for targets named Simple_Testing
 
 # Build rule for target.
-Examples: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Examples
-.PHONY : Examples
+Simple_Testing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Simple_Testing
+.PHONY : Simple_Testing
 
 # fast build rule for target.
-Examples/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/build
-.PHONY : Examples/fast
+Simple_Testing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/build
+.PHONY : Simple_Testing/fast
+
+#=============================================================================
+# Target rules for targets named Xor_Problems
+
+# Build rule for target.
+Xor_Problems: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Xor_Problems
+.PHONY : Xor_Problems
+
+# fast build rule for target.
+Xor_Problems/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/build
+.PHONY : Xor_Problems/fast
+
+#=============================================================================
+# Target rules for targets named Examples_backward
+
+# Build rule for target.
+Examples_backward: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Examples_backward
+.PHONY : Examples_backward
+
+# fast build rule for target.
+Examples_backward/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/build
+.PHONY : Examples_backward/fast
+
+#=============================================================================
+# Target rules for targets named Examples_forward
+
+# Build rule for target.
+Examples_forward: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Examples_forward
+.PHONY : Examples_forward
+
+# fast build rule for target.
+Examples_forward/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/build
+.PHONY : Examples_forward/fast
 
 #=============================================================================
 # Target rules for targets named ContinuousSubmit
@@ -521,7 +560,10 @@ FCC.o: FCC.cpp.o
 
 # target to build an object file
 FCC.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/FCC.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/FCC.cpp.o
 .PHONY : FCC.cpp.o
 
@@ -530,7 +572,10 @@ FCC.i: FCC.cpp.i
 
 # target to preprocess a source file
 FCC.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/FCC.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/FCC.cpp.i
 .PHONY : FCC.cpp.i
 
@@ -539,7 +584,10 @@ FCC.s: FCC.cpp.s
 
 # target to generate assembly for a file
 FCC.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/FCC.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/FCC.cpp.s
 .PHONY : FCC.cpp.s
 
@@ -548,7 +596,10 @@ Filter.o: Filter.cpp.o
 
 # target to build an object file
 Filter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter.cpp.o
 .PHONY : Filter.cpp.o
 
@@ -557,7 +608,10 @@ Filter.i: Filter.cpp.i
 
 # target to preprocess a source file
 Filter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter.cpp.i
 .PHONY : Filter.cpp.i
 
@@ -566,7 +620,10 @@ Filter.s: Filter.cpp.s
 
 # target to generate assembly for a file
 Filter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter.cpp.s
 .PHONY : Filter.cpp.s
 
@@ -575,7 +632,10 @@ Filter_ensemble.o: Filter_ensemble.cpp.o
 
 # target to build an object file
 Filter_ensemble.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_ensemble.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_ensemble.cpp.o
 .PHONY : Filter_ensemble.cpp.o
 
@@ -584,7 +644,10 @@ Filter_ensemble.i: Filter_ensemble.cpp.i
 
 # target to preprocess a source file
 Filter_ensemble.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_ensemble.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_ensemble.cpp.i
 .PHONY : Filter_ensemble.cpp.i
 
@@ -593,7 +656,10 @@ Filter_ensemble.s: Filter_ensemble.cpp.s
 
 # target to generate assembly for a file
 Filter_ensemble.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_ensemble.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_ensemble.cpp.s
 .PHONY : Filter_ensemble.cpp.s
 
@@ -602,7 +668,10 @@ Filter_layer.o: Filter_layer.cpp.o
 
 # target to build an object file
 Filter_layer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_layer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_layer.cpp.o
 .PHONY : Filter_layer.cpp.o
 
@@ -611,7 +680,10 @@ Filter_layer.i: Filter_layer.cpp.i
 
 # target to preprocess a source file
 Filter_layer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_layer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_layer.cpp.i
 .PHONY : Filter_layer.cpp.i
 
@@ -620,7 +692,10 @@ Filter_layer.s: Filter_layer.cpp.s
 
 # target to generate assembly for a file
 Filter_layer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_layer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_layer.cpp.s
 .PHONY : Filter_layer.cpp.s
 
@@ -629,7 +704,10 @@ Matrix_computations.o: Matrix_computations.cpp.o
 
 # target to build an object file
 Matrix_computations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Matrix_computations.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Matrix_computations.cpp.o
 .PHONY : Matrix_computations.cpp.o
 
@@ -638,7 +716,10 @@ Matrix_computations.i: Matrix_computations.cpp.i
 
 # target to preprocess a source file
 Matrix_computations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Matrix_computations.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Matrix_computations.cpp.i
 .PHONY : Matrix_computations.cpp.i
 
@@ -647,7 +728,10 @@ Matrix_computations.s: Matrix_computations.cpp.s
 
 # target to generate assembly for a file
 Matrix_computations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Matrix_computations.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Matrix_computations.cpp.s
 .PHONY : Matrix_computations.cpp.s
 
@@ -656,7 +740,10 @@ Save_load_image_label_pairs.o: Save_load_image_label_pairs.cpp.o
 
 # target to build an object file
 Save_load_image_label_pairs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Save_load_image_label_pairs.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o
 .PHONY : Save_load_image_label_pairs.cpp.o
 
@@ -665,7 +752,10 @@ Save_load_image_label_pairs.i: Save_load_image_label_pairs.cpp.i
 
 # target to preprocess a source file
 Save_load_image_label_pairs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Save_load_image_label_pairs.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.i
 .PHONY : Save_load_image_label_pairs.cpp.i
 
@@ -674,16 +764,43 @@ Save_load_image_label_pairs.s: Save_load_image_label_pairs.cpp.s
 
 # target to generate assembly for a file
 Save_load_image_label_pairs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Save_load_image_label_pairs.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.s
 .PHONY : Save_load_image_label_pairs.cpp.s
+
+examples/Backward_step_testing.o: examples/Backward_step_testing.cpp.o
+.PHONY : examples/Backward_step_testing.o
+
+# target to build an object file
+examples/Backward_step_testing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/examples/Backward_step_testing.cpp.o
+.PHONY : examples/Backward_step_testing.cpp.o
+
+examples/Backward_step_testing.i: examples/Backward_step_testing.cpp.i
+.PHONY : examples/Backward_step_testing.i
+
+# target to preprocess a source file
+examples/Backward_step_testing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/examples/Backward_step_testing.cpp.i
+.PHONY : examples/Backward_step_testing.cpp.i
+
+examples/Backward_step_testing.s: examples/Backward_step_testing.cpp.s
+.PHONY : examples/Backward_step_testing.s
+
+# target to generate assembly for a file
+examples/Backward_step_testing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/examples/Backward_step_testing.cpp.s
+.PHONY : examples/Backward_step_testing.cpp.s
 
 examples/Forward_step_testing.o: examples/Forward_step_testing.cpp.o
 .PHONY : examples/Forward_step_testing.o
 
 # target to build an object file
 examples/Forward_step_testing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/examples/Forward_step_testing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/examples/Forward_step_testing.cpp.o
 .PHONY : examples/Forward_step_testing.cpp.o
 
 examples/Forward_step_testing.i: examples/Forward_step_testing.cpp.i
@@ -691,7 +808,7 @@ examples/Forward_step_testing.i: examples/Forward_step_testing.cpp.i
 
 # target to preprocess a source file
 examples/Forward_step_testing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/examples/Forward_step_testing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/examples/Forward_step_testing.cpp.i
 .PHONY : examples/Forward_step_testing.cpp.i
 
 examples/Forward_step_testing.s: examples/Forward_step_testing.cpp.s
@@ -699,15 +816,66 @@ examples/Forward_step_testing.s: examples/Forward_step_testing.cpp.s
 
 # target to generate assembly for a file
 examples/Forward_step_testing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/examples/Forward_step_testing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/examples/Forward_step_testing.cpp.s
 .PHONY : examples/Forward_step_testing.cpp.s
+
+examples/simple_test.o: examples/simple_test.cpp.o
+.PHONY : examples/simple_test.o
+
+# target to build an object file
+examples/simple_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/examples/simple_test.cpp.o
+.PHONY : examples/simple_test.cpp.o
+
+examples/simple_test.i: examples/simple_test.cpp.i
+.PHONY : examples/simple_test.i
+
+# target to preprocess a source file
+examples/simple_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/examples/simple_test.cpp.i
+.PHONY : examples/simple_test.cpp.i
+
+examples/simple_test.s: examples/simple_test.cpp.s
+.PHONY : examples/simple_test.s
+
+# target to generate assembly for a file
+examples/simple_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/examples/simple_test.cpp.s
+.PHONY : examples/simple_test.cpp.s
+
+examples/xor_Problem.o: examples/xor_Problem.cpp.o
+.PHONY : examples/xor_Problem.o
+
+# target to build an object file
+examples/xor_Problem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/examples/xor_Problem.cpp.o
+.PHONY : examples/xor_Problem.cpp.o
+
+examples/xor_Problem.i: examples/xor_Problem.cpp.i
+.PHONY : examples/xor_Problem.i
+
+# target to preprocess a source file
+examples/xor_Problem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/examples/xor_Problem.cpp.i
+.PHONY : examples/xor_Problem.cpp.i
+
+examples/xor_Problem.s: examples/xor_Problem.cpp.s
+.PHONY : examples/xor_Problem.s
+
+# target to generate assembly for a file
+examples/xor_Problem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/examples/xor_Problem.cpp.s
+.PHONY : examples/xor_Problem.cpp.s
 
 extract_images.o: extract_images.cpp.o
 .PHONY : extract_images.o
 
 # target to build an object file
 extract_images.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/extract_images.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/extract_images.cpp.o
 .PHONY : extract_images.cpp.o
 
@@ -716,7 +884,10 @@ extract_images.i: extract_images.cpp.i
 
 # target to preprocess a source file
 extract_images.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/extract_images.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/extract_images.cpp.i
 .PHONY : extract_images.cpp.i
 
@@ -725,16 +896,58 @@ extract_images.s: extract_images.cpp.s
 
 # target to generate assembly for a file
 extract_images.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/extract_images.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/extract_images.cpp.s
 .PHONY : extract_images.cpp.s
+
+functions/MSE.o: functions/MSE.cpp.o
+.PHONY : functions/MSE.o
+
+# target to build an object file
+functions/MSE.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/MSE.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/MSE.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/MSE.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/MSE.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/MSE.cpp.o
+.PHONY : functions/MSE.cpp.o
+
+functions/MSE.i: functions/MSE.cpp.i
+.PHONY : functions/MSE.i
+
+# target to preprocess a source file
+functions/MSE.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/MSE.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/MSE.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/MSE.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/MSE.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/MSE.cpp.i
+.PHONY : functions/MSE.cpp.i
+
+functions/MSE.s: functions/MSE.cpp.s
+.PHONY : functions/MSE.s
+
+# target to generate assembly for a file
+functions/MSE.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/MSE.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/MSE.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/MSE.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/MSE.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/MSE.cpp.s
+.PHONY : functions/MSE.cpp.s
 
 functions/ReLu.o: functions/ReLu.cpp.o
 .PHONY : functions/ReLu.o
 
 # target to build an object file
 functions/ReLu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/ReLu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/ReLu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/ReLu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/ReLu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/ReLu.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/ReLu.cpp.o
 .PHONY : functions/ReLu.cpp.o
 
@@ -743,7 +956,10 @@ functions/ReLu.i: functions/ReLu.cpp.i
 
 # target to preprocess a source file
 functions/ReLu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/ReLu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/ReLu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/ReLu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/ReLu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/ReLu.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/ReLu.cpp.i
 .PHONY : functions/ReLu.cpp.i
 
@@ -752,7 +968,10 @@ functions/ReLu.s: functions/ReLu.cpp.s
 
 # target to generate assembly for a file
 functions/ReLu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/ReLu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/ReLu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/ReLu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/ReLu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/ReLu.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/ReLu.cpp.s
 .PHONY : functions/ReLu.cpp.s
 
@@ -761,7 +980,10 @@ functions/cross_entropy.o: functions/cross_entropy.cpp.o
 
 # target to build an object file
 functions/cross_entropy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/cross_entropy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/cross_entropy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/cross_entropy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/cross_entropy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/cross_entropy.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.o
 .PHONY : functions/cross_entropy.cpp.o
 
@@ -770,7 +992,10 @@ functions/cross_entropy.i: functions/cross_entropy.cpp.i
 
 # target to preprocess a source file
 functions/cross_entropy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/cross_entropy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/cross_entropy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/cross_entropy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/cross_entropy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/cross_entropy.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.i
 .PHONY : functions/cross_entropy.cpp.i
 
@@ -779,7 +1004,10 @@ functions/cross_entropy.s: functions/cross_entropy.cpp.s
 
 # target to generate assembly for a file
 functions/cross_entropy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/cross_entropy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/cross_entropy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/cross_entropy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/cross_entropy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/cross_entropy.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.s
 .PHONY : functions/cross_entropy.cpp.s
 
@@ -788,7 +1016,10 @@ functions/sigmoid.o: functions/sigmoid.cpp.o
 
 # target to build an object file
 functions/sigmoid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/sigmoid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/sigmoid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/sigmoid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/sigmoid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/sigmoid.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/sigmoid.cpp.o
 .PHONY : functions/sigmoid.cpp.o
 
@@ -797,7 +1028,10 @@ functions/sigmoid.i: functions/sigmoid.cpp.i
 
 # target to preprocess a source file
 functions/sigmoid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/sigmoid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/sigmoid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/sigmoid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/sigmoid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/sigmoid.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/sigmoid.cpp.i
 .PHONY : functions/sigmoid.cpp.i
 
@@ -806,7 +1040,10 @@ functions/sigmoid.s: functions/sigmoid.cpp.s
 
 # target to generate assembly for a file
 functions/sigmoid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/sigmoid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/sigmoid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/sigmoid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/sigmoid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/sigmoid.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/sigmoid.cpp.s
 .PHONY : functions/sigmoid.cpp.s
 
@@ -815,7 +1052,10 @@ functions/softmax.o: functions/softmax.cpp.o
 
 # target to build an object file
 functions/softmax.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/softmax.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/softmax.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/softmax.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/softmax.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/softmax.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/softmax.cpp.o
 .PHONY : functions/softmax.cpp.o
 
@@ -824,7 +1064,10 @@ functions/softmax.i: functions/softmax.cpp.i
 
 # target to preprocess a source file
 functions/softmax.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/softmax.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/softmax.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/softmax.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/softmax.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/softmax.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/softmax.cpp.i
 .PHONY : functions/softmax.cpp.i
 
@@ -833,7 +1076,10 @@ functions/softmax.s: functions/softmax.cpp.s
 
 # target to generate assembly for a file
 functions/softmax.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/functions/softmax.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/softmax.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/softmax.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/functions/softmax.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/softmax.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/softmax.cpp.s
 .PHONY : functions/softmax.cpp.s
 
@@ -842,7 +1088,10 @@ image_label_pair.o: image_label_pair.cpp.o
 
 # target to build an object file
 image_label_pair.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_label_pair.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_label_pair.cpp.o
 .PHONY : image_label_pair.cpp.o
 
@@ -851,7 +1100,10 @@ image_label_pair.i: image_label_pair.cpp.i
 
 # target to preprocess a source file
 image_label_pair.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_label_pair.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_label_pair.cpp.i
 .PHONY : image_label_pair.cpp.i
 
@@ -860,7 +1112,10 @@ image_label_pair.s: image_label_pair.cpp.s
 
 # target to generate assembly for a file
 image_label_pair.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_label_pair.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_label_pair.cpp.s
 .PHONY : image_label_pair.cpp.s
 
@@ -869,7 +1124,10 @@ image_processing.o: image_processing.cpp.o
 
 # target to build an object file
 image_processing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_processing.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_processing.cpp.o
 .PHONY : image_processing.cpp.o
 
@@ -878,7 +1136,10 @@ image_processing.i: image_processing.cpp.i
 
 # target to preprocess a source file
 image_processing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_processing.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_processing.cpp.i
 .PHONY : image_processing.cpp.i
 
@@ -887,7 +1148,10 @@ image_processing.s: image_processing.cpp.s
 
 # target to generate assembly for a file
 image_processing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_processing.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_processing.cpp.s
 .PHONY : image_processing.cpp.s
 
@@ -920,7 +1184,10 @@ max_pooling.o: max_pooling.cpp.o
 
 # target to build an object file
 max_pooling.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/max_pooling.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/max_pooling.cpp.o
 .PHONY : max_pooling.cpp.o
 
@@ -929,7 +1196,10 @@ max_pooling.i: max_pooling.cpp.i
 
 # target to preprocess a source file
 max_pooling.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/max_pooling.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/max_pooling.cpp.i
 .PHONY : max_pooling.cpp.i
 
@@ -938,7 +1208,10 @@ max_pooling.s: max_pooling.cpp.s
 
 # target to generate assembly for a file
 max_pooling.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/max_pooling.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/max_pooling.cpp.s
 .PHONY : max_pooling.cpp.s
 
@@ -947,7 +1220,10 @@ output_layer.o: output_layer.cpp.o
 
 # target to build an object file
 output_layer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/output_layer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/output_layer.cpp.o
 .PHONY : output_layer.cpp.o
 
@@ -956,7 +1232,10 @@ output_layer.i: output_layer.cpp.i
 
 # target to preprocess a source file
 output_layer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/output_layer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/output_layer.cpp.i
 .PHONY : output_layer.cpp.i
 
@@ -965,7 +1244,10 @@ output_layer.s: output_layer.cpp.s
 
 # target to generate assembly for a file
 output_layer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples.dir/build.make CMakeFiles/Examples.dir/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/output_layer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/output_layer.cpp.s
 .PHONY : output_layer.cpp.s
 
@@ -1007,7 +1289,10 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... CNNs"
-	@echo "... Examples"
+	@echo "... Examples_backward"
+	@echo "... Examples_forward"
+	@echo "... Simple_Testing"
+	@echo "... Xor_Problems"
 	@echo "... FCC.o"
 	@echo "... FCC.i"
 	@echo "... FCC.s"
@@ -1026,12 +1311,24 @@ help:
 	@echo "... Save_load_image_label_pairs.o"
 	@echo "... Save_load_image_label_pairs.i"
 	@echo "... Save_load_image_label_pairs.s"
+	@echo "... examples/Backward_step_testing.o"
+	@echo "... examples/Backward_step_testing.i"
+	@echo "... examples/Backward_step_testing.s"
 	@echo "... examples/Forward_step_testing.o"
 	@echo "... examples/Forward_step_testing.i"
 	@echo "... examples/Forward_step_testing.s"
+	@echo "... examples/simple_test.o"
+	@echo "... examples/simple_test.i"
+	@echo "... examples/simple_test.s"
+	@echo "... examples/xor_Problem.o"
+	@echo "... examples/xor_Problem.i"
+	@echo "... examples/xor_Problem.s"
 	@echo "... extract_images.o"
 	@echo "... extract_images.i"
 	@echo "... extract_images.s"
+	@echo "... functions/MSE.o"
+	@echo "... functions/MSE.i"
+	@echo "... functions/MSE.s"
 	@echo "... functions/ReLu.o"
 	@echo "... functions/ReLu.i"
 	@echo "... functions/ReLu.s"

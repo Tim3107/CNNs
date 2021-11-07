@@ -57,10 +57,10 @@ RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tim/Tim/CNNs
+CMAKE_SOURCE_DIR = /home/tim/Tim/CNN_folder/CNNs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tim/Tim/CNNs/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tim/Tim/CNNs/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNNs/cmake-build-debug/CMakeFiles /home/tim/Tim/CNNs/cmake-build-debug/functions//CMakeFiles/progress.marks
-	cd /home/tim/Tim/CNNs/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNNs/cmake-build-debug/CMakeFiles 0
+	cd /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/functions//CMakeFiles/progress.marks
+	cd /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tim/Tim/CNNs/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions/clean
+	cd /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,17 +113,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tim/Tim/CNNs/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions/preinstall
+	cd /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tim/Tim/CNNs/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions/preinstall
+	cd /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tim/Tim/CNNs/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -146,6 +146,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tim/Tim/CNNs/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

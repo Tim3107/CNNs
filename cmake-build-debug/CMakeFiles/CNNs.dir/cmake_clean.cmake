@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CNNs.dir/Matrix_computations.cpp.o"
   "CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o"
   "CMakeFiles/CNNs.dir/extract_images.cpp.o"
+  "CMakeFiles/CNNs.dir/functions/MSE.cpp.o"
   "CMakeFiles/CNNs.dir/functions/ReLu.cpp.o"
   "CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.o"
   "CMakeFiles/CNNs.dir/functions/sigmoid.cpp.o"
