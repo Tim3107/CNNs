@@ -11,7 +11,7 @@
 
 double kkkk(std::vector<std::vector<double>> features, std::vector<std::vector<double>> labels,FCC fully_1,FCC fully_2,FCC fully_3,Output_layer outputLayer){
     double  loss = 0;
-    for (int i = 0;i<4;i++) {
+    for (int i = 0;i<6;i++) {
 
         std::vector<double> temp1 = fully_1.forward_step(features[i]);
         std::vector<double> temp2 = fully_2.forward_step(temp1);
@@ -24,10 +24,14 @@ double kkkk(std::vector<std::vector<double>> features, std::vector<std::vector<d
 }
 
 int main(){
-    srand((unsigned int)time(NULL));
-    FCC fully_1(3,4);
-    FCC fully_2(4,6);
-    FCC fully_3(6,3);
+
+    srand((double)time(NULL));
+    FCC fully_1(3,6,"relu");
+    fully_1.setter_learning_rate(0.01);
+    FCC fully_2(6,3,"relu");
+    fully_2.setter_learning_rate(0.01);
+    FCC fully_3(3,3,"relu");
+    fully_3.setter_learning_rate(0.01);
     Output_layer outputLayer(3,3,"MSE","none");
 
     int random_number = 0;
@@ -35,16 +39,17 @@ int main(){
     display_array(fully_1.getter_matrix());
 
 
-    std::vector<double> feature_1 = {{0.,0.,0.}};
-    std::vector<double> feature_2 = {{1.,0.,0.}};
-    std::vector<double> feature_3 = {{0.,1.,0.}};
-    std::vector<double> feature_4 = {{1.,1.,0.}};
-    std::vector<double> feature_5 = {{0.,1.,1.}};
-    std::vector<double> feature_6 = {{1.,1.,1.}};
+    std::vector<double> feature_1 = {0.,0.,0.};
+    std::vector<double> feature_2 = {1.,0.,0.};
+    std::vector<double> feature_3 = {0.,1.,0.};
+    std::vector<double> feature_4 = {1.,1.,0.};
+    std::vector<double> feature_5 = {0.,1.,1.};
+    std::vector<double> feature_6 = {1.,1.,1.};
+
 
     std::vector<double> label_1 = {1.,1.,1.};
-    std::vector<double> label_2 = {0.,0.,0.};
-    std::vector<double> label_3 = {0.,1.,0.};
+    std::vector<double> label_2 = {0.,1.,1.};
+    std::vector<double> label_3 = {1.,0.,1.};
     std::vector<double> label_4 = {0.,0.,1.};
     std::vector<double> label_5 = {1.,0.,0.};
     std::vector<double> label_6 = {0.,0.,0.};
@@ -55,21 +60,22 @@ int main(){
     std::vector<double> temp1 = fully_1.forward_step(feature_1);
     std::vector<double> temp2 = fully_2.forward_step(temp1);
     std::vector<double> temp3 = fully_3.forward_step(temp2);
-    std::vector<double> vect = outputLayer.forward_step(temp2);
+    std::vector<double> vect = outputLayer.forward_step(temp3);
 
     double loss = outputLayer.compute_loss(label_1,vect);
 
     std::cout << "loss: " <<loss << std::endl;
 
     std::vector<double> backprop_1 = outputLayer.backward_step(label_1);
-    std::vector<double> backprop_2 = fully_2.backward_step(backprop_1);
+    std::vector<double> backprop_2 = fully_3.backward_step(backprop_1);
     std::vector<double> backprop_3 = fully_2.backward_step(backprop_2);
     std::vector<double> backprop_4 = fully_1.backward_step(backprop_3);
 
-    for (int i = 0;i<100;i++) {
-        fully_1.setter_learning_rate(1);
-        fully_2.setter_learning_rate(1);
-        random_number = rand() % 4;
+    for (int i = 0;i<20000;i++) {
+        fully_1.setter_learning_rate(0.01);
+        fully_2.setter_learning_rate(0.01);
+        fully_3.setter_learning_rate(0.01);
+        random_number = rand() % 6;
         temp1 = fully_1.forward_step(features[random_number]);
         temp2 = fully_2.forward_step(temp1);
         temp3 = fully_3.forward_step(temp2);
@@ -86,6 +92,40 @@ int main(){
         backprop_3 = fully_2.backward_step(backprop_2);
         backprop_4 = fully_1.backward_step(backprop_3);
     }
+
+    std::cout <<"Testing"<<std::endl;
+
+    temp1 = fully_1.forward_step({0.,1.,0.});
+    temp2 = fully_2.forward_step(temp1);
+    temp3 = fully_3.forward_step(temp2);
+    vect = outputLayer.forward_step(temp3);
+
+    display_vector(vect);
+
+/*
+    for (int i = 0; i<6;i++){
+        std::cout << "printing errors of "<<i  <<std::endl;
+        temp1 = fully_1.forward_step(features[i]);
+        temp2 = fully_2.forward_step(temp1);
+        temp3 = fully_3.forward_step(temp2);
+        vect = outputLayer.forward_step(temp3);
+
+        std::cout << " "  << std::endl;
+        std::cout << " "  << std::endl;
+        std::cout << " " << std::endl;
+
+        display_vector(vect);
+        std::cout << " "  << std::endl;
+        std::cout << " "  << std::endl;
+        std::cout << " "  << std::endl;
+
+        std::cout << " "  << std::endl;
+
+        loss = outputLayer.compute_loss(labels[i], vect);
+
+        std::cout << "loss: " << loss << std::endl;
+    }
+    */
 
     return 0;
 };
