@@ -1,5 +1,6 @@
 /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles/Fun_Testing.dir
 /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles/Simple_Testing.dir
 /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles/Xor_Problems.dir
 /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles/Examples_backward.dir

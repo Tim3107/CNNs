@@ -37,6 +37,52 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Fun_Testing">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Fun_Testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fun_Testing"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Fun_Testing/fast">
+				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Fun_Testing" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fun_Testing/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Simple_Testing">
 				<Option output="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/Simple_Testing" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
@@ -309,6 +355,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/FCC.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -316,6 +363,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/FCC.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -323,6 +371,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -330,6 +379,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -337,6 +387,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter_ensemble.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -344,6 +395,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter_ensemble.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -351,6 +403,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter_layer.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -358,6 +411,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Filter_layer.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -365,6 +419,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Matrix_computations.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -372,6 +427,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Matrix_computations.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -379,6 +435,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Save_load_image_label_pairs.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -386,6 +443,23 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Save_load_image_label_pairs.h">
+			<Option target="Fun_Testing"/>
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
+			<Option target="CNNs"/>
+		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Trainer.cpp">
+			<Option target="Fun_Testing"/>
+			<Option target="Simple_Testing"/>
+			<Option target="Xor_Problems"/>
+			<Option target="Examples_backward"/>
+			<Option target="Examples_forward"/>
+			<Option target="CNNs"/>
+		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Trainer.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -398,6 +472,9 @@
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/examples/Forward_step_testing.cpp">
 			<Option target="Examples_forward"/>
 		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/examples/Fun.cpp">
+			<Option target="Fun_Testing"/>
+		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/examples/simple_test.cpp">
 			<Option target="Simple_Testing"/>
 		</Unit>
@@ -405,6 +482,7 @@
 			<Option target="Xor_Problems"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/extract_images.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -412,6 +490,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/extract_images.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -419,6 +498,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/MSE.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -426,6 +506,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/MSE.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -433,6 +514,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/ReLu.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -440,6 +522,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/ReLu.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -447,6 +530,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/cross_entropy.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -454,6 +538,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/cross_entropy.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -461,6 +546,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/sigmoid.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -468,6 +554,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/sigmoid.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -475,6 +562,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/softmax.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -482,6 +570,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/softmax.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -489,6 +578,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/image_label_pair.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -496,6 +586,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/image_label_pair.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -503,6 +594,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/image_processing.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -510,6 +602,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/image_processing.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -520,6 +613,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/max_pooling.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -527,6 +621,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/max_pooling.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -534,6 +629,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/output_layer.cpp">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>
@@ -541,6 +637,7 @@
 			<Option target="CNNs"/>
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/output_layer.h">
+			<Option target="Fun_Testing"/>
 			<Option target="Simple_Testing"/>
 			<Option target="Xor_Problems"/>
 			<Option target="Examples_backward"/>

@@ -8,12 +8,16 @@
 #include <iostream>
 #include <vector>
 #include "algorithm"
+#include "functions/sigmoid.h"
+#include "functions/ReLu.h"
+#include "Matrix_computations.h"
 
 class Filter {
     int dim_Filter;
     int padding;
     int stride;
     std::vector<std::vector<double>> Filter_grid;
+    std::string activation_function;
 
 private:
 
@@ -34,9 +38,18 @@ public:
     * @param dim_Filter: Dimension of Filter
     * @param padding : Number of added zeros on each edge
     * @param stride : Number of overjumped elements of each Filter operation
+    * @param activation_function : activation_function for Filter
+    */
+    Filter(int dim_Filter, int padding,int stride,std::string activation_function);
+
+    /** \brief Constructor of a Filter
+    * @param dim_Filter: Dimension of Filter
+    * @param padding : Number of added zeros on each edge
+    * @param stride : Number of overjumped elements of each Filter operation
+     *@param activation_function : activation_function for Filter
     * @param Filter_map : Default-Filter is given
     */
-    Filter(int dim_Filter, int padding, int stride,std::vector<std::vector<double>> Filter_map);
+    Filter(int dim_Filter, int padding,int stride,std::string activation_function,std::vector<std::vector<double>> Filter_map);
     /** Filter function
     * @param image_array : Array which is going to be filtered
      *@param [out] filtered_array : filtered Array

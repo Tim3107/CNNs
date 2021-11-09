@@ -5,15 +5,16 @@
 #include "Filter_ensemble.h"
 Filter_set::Filter_set()  {}
 
-Filter_set::Filter_set(int anzahl_filter, int dim_filter, int padding, int stride) {
+Filter_set::Filter_set(int anzahl_filter, int dim_filter, int padding, int stride,std::string activation_function) {
     this->anzahl_filter = anzahl_filter;
     this->dim_filters = dim_filter;
     this->padding = padding;
     this->stride = stride;
+    this->activation_function = activation_function;
 
     this->filters = new Filter[this->anzahl_filter];
     for (int i = 0;i<this->anzahl_filter;i++){
-        this->filters[i] = Filter(this->dim_filters,this->padding,this->stride);
+        this->filters[i] = Filter(this->dim_filters,this->padding,this->stride, this->activation_function);
     }
 
 

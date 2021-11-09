@@ -12,14 +12,24 @@ Filter::Filter(int dim_Filter, int padding, int stride) {
     this->dim_Filter = dim_Filter;
     this->padding = padding;
     this->stride = stride;
+    this->activation_function = "none";
     this->Filter_grid = std::vector<std::vector<double>>(dim_Filter,std::vector<double> (dim_Filter ,1)); //---> need random values
-    this->fill_matrix(this->Filter_grid);
+    this->fill_matrix(this->Filter_grid); //Maybe also need to change to random matrix
 }
 
-Filter::Filter(int dim_Filter, int padding, int stride,std::vector<std::vector<double>> Filter_map) {
+Filter::Filter(int dim_Filter, int padding,int stride,std::string activation_function) {
     this->dim_Filter = dim_Filter;
     this->padding = padding;
     this->stride = stride;
+    this->activation_function = activation_function;
+    this->Filter_grid = random_matrix(dim_Filter,dim_Filter,1);
+}
+
+Filter::Filter(int dim_Filter, int padding, int stride,std::string activation_function, std::vector<std::vector<double>> Filter_map) {
+    this->dim_Filter = dim_Filter;
+    this->padding = padding;
+    this->stride = stride;
+    this->activation_function = activation_function;
     this->Filter_grid = Filter_map;
 }
 
@@ -40,6 +50,12 @@ std::vector<std::vector<double>> Filter::run_Filter(std::vector<std::vector<doub
                 for (int inner_j = 0; inner_j < dim_Filter; inner_j++) {
                         output_array[i][j] += temp[i*stride+inner_i][j*stride+inner_j]*Filter_grid[inner_i][inner_j];
                 }
+            }
+            if(this->activation_function == "sigmoid"){
+                output_array[i][j] = sigmoid(output_array[i][j]);
+            }
+            else if(this->activation_function == "relu"){
+                output_array[i][j] = reLu(output_array[i][j]);
             }
         }
     }

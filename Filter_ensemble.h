@@ -12,6 +12,7 @@ class Filter_set{
     int dim_filters;
     int padding;
     int stride;
+    std::string activation_function;
     Filter* filters;
 private:
 
@@ -26,8 +27,9 @@ public:
      * @param dim_filter : size of Filters
      * @param padding : size of padding
      * @param stride : stride
+     * @param activation_function : activation function after filter operation
      */
-    Filter_set(int anzahl_filter, int dim_filter, int padding, int stride);
+    Filter_set(int anzahl_filter, int dim_filter, int padding, int stride, std::string activation_function);
 
     /** Filter function, all filters are applied to same image. This function takes the methods of each Filter
     * @param image_array : Array which is going to be filtered

@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/Fun_Testing.dir/all
 all: CMakeFiles/Simple_Testing.dir/all
 all: CMakeFiles/Xor_Problems.dir/all
 all: CMakeFiles/Examples_backward.dir/all
@@ -76,6 +77,7 @@ preinstall: functions/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/Fun_Testing.dir/clean
 clean: CMakeFiles/Simple_Testing.dir/clean
 clean: CMakeFiles/Xor_Problems.dir/clean
 clean: CMakeFiles/Examples_backward.dir/clean
@@ -128,18 +130,44 @@ functions/clean:
 .PHONY : functions/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Fun_Testing.dir
+
+# All Build rule for target.
+CMakeFiles/Fun_Testing.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target Fun_Testing"
+.PHONY : CMakeFiles/Fun_Testing.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Fun_Testing.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Fun_Testing.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Fun_Testing.dir/rule
+
+# Convenience name for target.
+Fun_Testing: CMakeFiles/Fun_Testing.dir/rule
+.PHONY : Fun_Testing
+
+# clean rule for target.
+CMakeFiles/Fun_Testing.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/clean
+.PHONY : CMakeFiles/Fun_Testing.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Simple_Testing.dir
 
 # All Build rule for target.
 CMakeFiles/Simple_Testing.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72 "Built target Simple_Testing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83 "Built target Simple_Testing"
 .PHONY : CMakeFiles/Simple_Testing.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Simple_Testing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Simple_Testing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Simple_Testing.dir/rule
@@ -160,12 +188,12 @@ CMakeFiles/Simple_Testing.dir/clean:
 CMakeFiles/Xor_Problems.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90 "Built target Xor_Problems"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target Xor_Problems"
 .PHONY : CMakeFiles/Xor_Problems.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Xor_Problems.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Xor_Problems.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Xor_Problems.dir/rule
@@ -186,12 +214,12 @@ CMakeFiles/Xor_Problems.dir/clean:
 CMakeFiles/Examples_backward.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36 "Built target Examples_backward"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33 "Built target Examples_backward"
 .PHONY : CMakeFiles/Examples_backward.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Examples_backward.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Examples_backward.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Examples_backward.dir/rule
@@ -212,12 +240,12 @@ CMakeFiles/Examples_backward.dir/clean:
 CMakeFiles/Examples_forward.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target Examples_forward"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target Examples_forward"
 .PHONY : CMakeFiles/Examples_forward.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Examples_forward.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Examples_forward.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Examples_forward.dir/rule
@@ -602,12 +630,12 @@ CMakeFiles/ExperimentalStart.dir/clean:
 CMakeFiles/CNNs.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target CNNs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target CNNs"
 .PHONY : CMakeFiles/CNNs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CNNs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CNNs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/CNNs.dir/rule

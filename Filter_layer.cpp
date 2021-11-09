@@ -5,16 +5,17 @@
 #include "Filter_layer.h"
 
 
-Filter_layer::Filter_layer(int Filter_dim, int padding, int stride, int input_channels, int output_channels) {
+Filter_layer::Filter_layer(int Filter_dim, int padding, int stride,std::string activation_function, int input_channels, int output_channels) {
     this->Filter_dim = Filter_dim;
     this->padding = padding;
     this->stride = stride;
+    this->activation_function = activation_function;
     this->input_channels = input_channels;
     this->output_channels = output_channels;
 
     this->filter_sets = new Filter_set[output_channels];
     for (int i = 0;i<this->output_channels; i++){
-        filter_sets[i] = Filter_set(this->input_channels,this->Filter_dim , this->padding, this->stride);
+        filter_sets[i] = Filter_set(this->input_channels,this->Filter_dim , this->padding, this->stride,this->activation_function);
     }
 
 }

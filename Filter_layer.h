@@ -13,6 +13,7 @@ class Filter_layer{
     int Filter_dim;
     int padding;
     int stride;
+    std::string activation_function;
     int input_channels;
     int output_channels;
     Filter_set* filter_sets;
@@ -22,10 +23,13 @@ public:
     /**@brief Constructor. Instances are objects which consist of couple Filter_ensembles. One for each output_channel
      *
      * @param Filter_dim : Dim of the Filters which are used.
+     * @param padding : number of added zeros at edges
+     * @param stride : stride
+     * @param activation_function : activation function after filter operation
      * @param input_channels : Channels of input image
      * @param output_channels : Channels of output channel
      */
-    Filter_layer(int Filter_dim, int padding, int stride,int input_channels, int output_channels);
+    Filter_layer(int Filter_dim, int padding, int stride,std::string activation_function,int input_channels, int output_channels);
 
 
     /**This routine gets a 3D image and uses a 4D Filter to get a 3D image
