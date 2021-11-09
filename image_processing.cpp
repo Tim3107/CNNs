@@ -46,6 +46,17 @@ void display_array(std::vector<std::vector<double>> input_array){
     }
 }
 
+void display_array(std::vector<std::vector<int>> input_array){
+    int rows = input_array.size();
+    int cols = input_array[0].size();
+    for (int i = 0;i<rows;i++){
+        for (int j = 0;j<cols;j++){
+            std::cout << input_array[i][j]<< " ";
+        }
+        std::cout << "   "<< std::endl;
+    }
+}
+
 void display_vector(std::vector<double> input_vector){
     int rows = input_vector.size();
     for (int i = 0;i<rows;i++){

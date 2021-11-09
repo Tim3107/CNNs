@@ -111,8 +111,8 @@ std::vector<double> vector_additions(std::vector<double> input_vector_1, std::ve
 std::vector<double> random_vector(int rows, double range){
     srand((double) time(NULL));
     static std::random_device generator;
-    std::uniform_real_distribution<double> distribution (0,range);
-    std::uniform_real_distribution<double> unif(0,range);
+    std::uniform_real_distribution<double> distribution (-range,range);
+    std::uniform_real_distribution<double> unif(-range,range);
     std::default_random_engine re;
     std::vector<double> output_array(rows,0);
     for (int i = 0;i<rows;i++){
@@ -125,8 +125,8 @@ std::vector<double> random_vector(int rows, double range){
 std::vector<std::vector<double>> random_matrix(int rows, int cols, double range){
     srand((double) time(NULL));
     static std::random_device generator;
-    std::uniform_real_distribution<double> distribution (0,range);
-    std::uniform_real_distribution<double> unif(0,range);
+    std::uniform_real_distribution<double> distribution (-range,range);
+    std::uniform_real_distribution<double> unif(-range,range);
     std::default_random_engine re;
     std::vector<std::vector<double>> output_array(rows,std::vector<double>(cols,0));
     for (int i = 0;i<rows;i++){

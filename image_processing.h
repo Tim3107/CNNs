@@ -28,6 +28,12 @@ cv::Mat1f conversion_to_Mat(std::vector<std::vector<double>> input_array);
  * \brief This function simply prints the entries of a 2D std::vector row-wise on the console.
  * @param input_array : Input array
  */
+void display_array(std::vector<std::vector<int>> input_array);
+
+/**
+ * \brief This function simply prints the entries of a 2D std::vector row-wise on the console.
+ * @param input_array : Input array
+ */
 void display_array(std::vector<std::vector<double>> input_array);
 
 /**Method displays vector
