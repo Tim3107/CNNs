@@ -10,9 +10,9 @@
 #include "image_processing.h"
 #include <string>
 #include "Matrix_computations.h"
-#include "functions/sigmoid.h"
-#include "functions/ReLu.h"
-#include "functions/softmax.h"
+#include "../functions/sigmoid.h"
+#include "../functions/ReLu.h"
+#include "../functions/softmax.h"
 #include <iostream>
 #include <cctype>
 

@@ -4,8 +4,8 @@
 
 #include "FCC.h"
 #include "opencv2/opencv.hpp"
-#include "functions/sigmoid.h"
-#include "functions/ReLu.h"
+#include "../functions/sigmoid.h"
+#include "../functions/ReLu.h"
 
 
 

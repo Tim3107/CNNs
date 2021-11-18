@@ -79,57 +79,57 @@ CMakeFiles/CNNs.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/main.cpp -o CMakeFiles/CNNs.dir/main.cpp.s
 
-CMakeFiles/CNNs.dir/Filter.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/Filter.cpp.o: ../Filter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CNNs.dir/Filter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Filter.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Filter.cpp
+CMakeFiles/CNNs.dir/Tools/Filter.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/Filter.cpp.o: ../Tools/Filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CNNs.dir/Tools/Filter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/Filter.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/Filter.cpp
 
-CMakeFiles/CNNs.dir/Filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Filter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Filter.cpp > CMakeFiles/CNNs.dir/Filter.cpp.i
+CMakeFiles/CNNs.dir/Tools/Filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/Filter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/Filter.cpp > CMakeFiles/CNNs.dir/Tools/Filter.cpp.i
 
-CMakeFiles/CNNs.dir/Filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Filter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Filter.cpp -o CMakeFiles/CNNs.dir/Filter.cpp.s
+CMakeFiles/CNNs.dir/Tools/Filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/Filter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/Filter.cpp -o CMakeFiles/CNNs.dir/Tools/Filter.cpp.s
 
-CMakeFiles/CNNs.dir/max_pooling.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/max_pooling.cpp.o: ../max_pooling.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CNNs.dir/max_pooling.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/max_pooling.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/max_pooling.cpp
+CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.o: ../Tools/max_pooling.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/max_pooling.cpp
 
-CMakeFiles/CNNs.dir/max_pooling.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/max_pooling.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/max_pooling.cpp > CMakeFiles/CNNs.dir/max_pooling.cpp.i
+CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/max_pooling.cpp > CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.i
 
-CMakeFiles/CNNs.dir/max_pooling.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/max_pooling.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/max_pooling.cpp -o CMakeFiles/CNNs.dir/max_pooling.cpp.s
+CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/max_pooling.cpp -o CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.s
 
-CMakeFiles/CNNs.dir/extract_images.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/extract_images.cpp.o: ../extract_images.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CNNs.dir/extract_images.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/extract_images.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/extract_images.cpp
+CMakeFiles/CNNs.dir/Tools/extract_images.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/extract_images.cpp.o: ../Tools/extract_images.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CNNs.dir/Tools/extract_images.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/extract_images.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/extract_images.cpp
 
-CMakeFiles/CNNs.dir/extract_images.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/extract_images.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/extract_images.cpp > CMakeFiles/CNNs.dir/extract_images.cpp.i
+CMakeFiles/CNNs.dir/Tools/extract_images.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/extract_images.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/extract_images.cpp > CMakeFiles/CNNs.dir/Tools/extract_images.cpp.i
 
-CMakeFiles/CNNs.dir/extract_images.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/extract_images.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/extract_images.cpp -o CMakeFiles/CNNs.dir/extract_images.cpp.s
+CMakeFiles/CNNs.dir/Tools/extract_images.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/extract_images.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/extract_images.cpp -o CMakeFiles/CNNs.dir/Tools/extract_images.cpp.s
 
-CMakeFiles/CNNs.dir/image_processing.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/image_processing.cpp.o: ../image_processing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CNNs.dir/image_processing.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/image_processing.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/image_processing.cpp
+CMakeFiles/CNNs.dir/Tools/image_processing.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/image_processing.cpp.o: ../Tools/image_processing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CNNs.dir/Tools/image_processing.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/image_processing.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.cpp
 
-CMakeFiles/CNNs.dir/image_processing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/image_processing.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/image_processing.cpp > CMakeFiles/CNNs.dir/image_processing.cpp.i
+CMakeFiles/CNNs.dir/Tools/image_processing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/image_processing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.cpp > CMakeFiles/CNNs.dir/Tools/image_processing.cpp.i
 
-CMakeFiles/CNNs.dir/image_processing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/image_processing.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/image_processing.cpp -o CMakeFiles/CNNs.dir/image_processing.cpp.s
+CMakeFiles/CNNs.dir/Tools/image_processing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/image_processing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.cpp -o CMakeFiles/CNNs.dir/Tools/image_processing.cpp.s
 
 CMakeFiles/CNNs.dir/functions/sigmoid.cpp.o: CMakeFiles/CNNs.dir/flags.make
 CMakeFiles/CNNs.dir/functions/sigmoid.cpp.o: ../functions/sigmoid.cpp
@@ -170,44 +170,44 @@ CMakeFiles/CNNs.dir/functions/softmax.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/functions/softmax.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/functions/softmax.cpp -o CMakeFiles/CNNs.dir/functions/softmax.cpp.s
 
-CMakeFiles/CNNs.dir/FCC.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/FCC.cpp.o: ../FCC.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CNNs.dir/FCC.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/FCC.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/FCC.cpp
+CMakeFiles/CNNs.dir/Tools/FCC.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/FCC.cpp.o: ../Tools/FCC.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CNNs.dir/Tools/FCC.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/FCC.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/FCC.cpp
 
-CMakeFiles/CNNs.dir/FCC.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/FCC.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/FCC.cpp > CMakeFiles/CNNs.dir/FCC.cpp.i
+CMakeFiles/CNNs.dir/Tools/FCC.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/FCC.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/FCC.cpp > CMakeFiles/CNNs.dir/Tools/FCC.cpp.i
 
-CMakeFiles/CNNs.dir/FCC.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/FCC.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/FCC.cpp -o CMakeFiles/CNNs.dir/FCC.cpp.s
+CMakeFiles/CNNs.dir/Tools/FCC.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/FCC.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/FCC.cpp -o CMakeFiles/CNNs.dir/Tools/FCC.cpp.s
 
-CMakeFiles/CNNs.dir/Matrix_computations.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/Matrix_computations.cpp.o: ../Matrix_computations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CNNs.dir/Matrix_computations.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Matrix_computations.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Matrix_computations.cpp
+CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.o: ../Tools/Matrix_computations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.cpp
 
-CMakeFiles/CNNs.dir/Matrix_computations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Matrix_computations.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Matrix_computations.cpp > CMakeFiles/CNNs.dir/Matrix_computations.cpp.i
+CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.cpp > CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.i
 
-CMakeFiles/CNNs.dir/Matrix_computations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Matrix_computations.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Matrix_computations.cpp -o CMakeFiles/CNNs.dir/Matrix_computations.cpp.s
+CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.cpp -o CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.s
 
-CMakeFiles/CNNs.dir/output_layer.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/output_layer.cpp.o: ../output_layer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CNNs.dir/output_layer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/output_layer.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/output_layer.cpp
+CMakeFiles/CNNs.dir/Tools/output_layer.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/output_layer.cpp.o: ../Tools/output_layer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CNNs.dir/Tools/output_layer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/output_layer.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/output_layer.cpp
 
-CMakeFiles/CNNs.dir/output_layer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/output_layer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/output_layer.cpp > CMakeFiles/CNNs.dir/output_layer.cpp.i
+CMakeFiles/CNNs.dir/Tools/output_layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/output_layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/output_layer.cpp > CMakeFiles/CNNs.dir/Tools/output_layer.cpp.i
 
-CMakeFiles/CNNs.dir/output_layer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/output_layer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/output_layer.cpp -o CMakeFiles/CNNs.dir/output_layer.cpp.s
+CMakeFiles/CNNs.dir/Tools/output_layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/output_layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/output_layer.cpp -o CMakeFiles/CNNs.dir/Tools/output_layer.cpp.s
 
 CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.o: CMakeFiles/CNNs.dir/flags.make
 CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.o: ../functions/cross_entropy.cpp
@@ -222,57 +222,57 @@ CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/functions/cross_entropy.cpp -o CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.s
 
-CMakeFiles/CNNs.dir/image_label_pair.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/image_label_pair.cpp.o: ../image_label_pair.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/CNNs.dir/image_label_pair.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/image_label_pair.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/image_label_pair.cpp
+CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.o: ../Tools/image_label_pair.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/image_label_pair.cpp
 
-CMakeFiles/CNNs.dir/image_label_pair.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/image_label_pair.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/image_label_pair.cpp > CMakeFiles/CNNs.dir/image_label_pair.cpp.i
+CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/image_label_pair.cpp > CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.i
 
-CMakeFiles/CNNs.dir/image_label_pair.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/image_label_pair.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/image_label_pair.cpp -o CMakeFiles/CNNs.dir/image_label_pair.cpp.s
+CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/image_label_pair.cpp -o CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.s
 
-CMakeFiles/CNNs.dir/Filter_ensemble.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/Filter_ensemble.cpp.o: ../Filter_ensemble.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/CNNs.dir/Filter_ensemble.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Filter_ensemble.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Filter_ensemble.cpp
+CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.o: ../Tools/Filter_ensemble.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_ensemble.cpp
 
-CMakeFiles/CNNs.dir/Filter_ensemble.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Filter_ensemble.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Filter_ensemble.cpp > CMakeFiles/CNNs.dir/Filter_ensemble.cpp.i
+CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_ensemble.cpp > CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.i
 
-CMakeFiles/CNNs.dir/Filter_ensemble.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Filter_ensemble.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Filter_ensemble.cpp -o CMakeFiles/CNNs.dir/Filter_ensemble.cpp.s
+CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_ensemble.cpp -o CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.s
 
-CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o: ../Save_load_image_label_pairs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Save_load_image_label_pairs.cpp
+CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.o: ../Tools/Save_load_image_label_pairs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/Save_load_image_label_pairs.cpp
 
-CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Save_load_image_label_pairs.cpp > CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.i
+CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/Save_load_image_label_pairs.cpp > CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.i
 
-CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Save_load_image_label_pairs.cpp -o CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.s
+CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/Save_load_image_label_pairs.cpp -o CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.s
 
-CMakeFiles/CNNs.dir/Filter_layer.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/Filter_layer.cpp.o: ../Filter_layer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/CNNs.dir/Filter_layer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Filter_layer.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Filter_layer.cpp
+CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.o: ../Tools/Filter_layer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_layer.cpp
 
-CMakeFiles/CNNs.dir/Filter_layer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Filter_layer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Filter_layer.cpp > CMakeFiles/CNNs.dir/Filter_layer.cpp.i
+CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_layer.cpp > CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.i
 
-CMakeFiles/CNNs.dir/Filter_layer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Filter_layer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Filter_layer.cpp -o CMakeFiles/CNNs.dir/Filter_layer.cpp.s
+CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_layer.cpp -o CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.s
 
 CMakeFiles/CNNs.dir/functions/MSE.cpp.o: CMakeFiles/CNNs.dir/flags.make
 CMakeFiles/CNNs.dir/functions/MSE.cpp.o: ../functions/MSE.cpp
@@ -287,61 +287,76 @@ CMakeFiles/CNNs.dir/functions/MSE.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/functions/MSE.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/functions/MSE.cpp -o CMakeFiles/CNNs.dir/functions/MSE.cpp.s
 
-CMakeFiles/CNNs.dir/Trainer.cpp.o: CMakeFiles/CNNs.dir/flags.make
-CMakeFiles/CNNs.dir/Trainer.cpp.o: ../Trainer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CNNs.dir/Trainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Trainer.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Trainer.cpp
+CMakeFiles/CNNs.dir/Tools/Trainer.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/Trainer.cpp.o: ../Tools/Trainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/CNNs.dir/Tools/Trainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/Trainer.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/Trainer.cpp
 
-CMakeFiles/CNNs.dir/Trainer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Trainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Trainer.cpp > CMakeFiles/CNNs.dir/Trainer.cpp.i
+CMakeFiles/CNNs.dir/Tools/Trainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/Trainer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/Trainer.cpp > CMakeFiles/CNNs.dir/Tools/Trainer.cpp.i
 
-CMakeFiles/CNNs.dir/Trainer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Trainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Trainer.cpp -o CMakeFiles/CNNs.dir/Trainer.cpp.s
+CMakeFiles/CNNs.dir/Tools/Trainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/Trainer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/Trainer.cpp -o CMakeFiles/CNNs.dir/Tools/Trainer.cpp.s
+
+CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.o: CMakeFiles/CNNs.dir/flags.make
+CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.o: ../Tools/Filter_Operations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.o -c /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_Operations.cpp
+
+CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_Operations.cpp > CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.i
+
+CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_Operations.cpp -o CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.s
 
 # Object files for target CNNs
 CNNs_OBJECTS = \
 "CMakeFiles/CNNs.dir/main.cpp.o" \
-"CMakeFiles/CNNs.dir/Filter.cpp.o" \
-"CMakeFiles/CNNs.dir/max_pooling.cpp.o" \
-"CMakeFiles/CNNs.dir/extract_images.cpp.o" \
-"CMakeFiles/CNNs.dir/image_processing.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/Filter.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/extract_images.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/image_processing.cpp.o" \
 "CMakeFiles/CNNs.dir/functions/sigmoid.cpp.o" \
 "CMakeFiles/CNNs.dir/functions/ReLu.cpp.o" \
 "CMakeFiles/CNNs.dir/functions/softmax.cpp.o" \
-"CMakeFiles/CNNs.dir/FCC.cpp.o" \
-"CMakeFiles/CNNs.dir/Matrix_computations.cpp.o" \
-"CMakeFiles/CNNs.dir/output_layer.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/FCC.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/output_layer.cpp.o" \
 "CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.o" \
-"CMakeFiles/CNNs.dir/image_label_pair.cpp.o" \
-"CMakeFiles/CNNs.dir/Filter_ensemble.cpp.o" \
-"CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o" \
-"CMakeFiles/CNNs.dir/Filter_layer.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.o" \
 "CMakeFiles/CNNs.dir/functions/MSE.cpp.o" \
-"CMakeFiles/CNNs.dir/Trainer.cpp.o"
+"CMakeFiles/CNNs.dir/Tools/Trainer.cpp.o" \
+"CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.o"
 
 # External object files for target CNNs
 CNNs_EXTERNAL_OBJECTS =
 
 CNNs: CMakeFiles/CNNs.dir/main.cpp.o
-CNNs: CMakeFiles/CNNs.dir/Filter.cpp.o
-CNNs: CMakeFiles/CNNs.dir/max_pooling.cpp.o
-CNNs: CMakeFiles/CNNs.dir/extract_images.cpp.o
-CNNs: CMakeFiles/CNNs.dir/image_processing.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/Filter.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/extract_images.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/image_processing.cpp.o
 CNNs: CMakeFiles/CNNs.dir/functions/sigmoid.cpp.o
 CNNs: CMakeFiles/CNNs.dir/functions/ReLu.cpp.o
 CNNs: CMakeFiles/CNNs.dir/functions/softmax.cpp.o
-CNNs: CMakeFiles/CNNs.dir/FCC.cpp.o
-CNNs: CMakeFiles/CNNs.dir/Matrix_computations.cpp.o
-CNNs: CMakeFiles/CNNs.dir/output_layer.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/FCC.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/output_layer.cpp.o
 CNNs: CMakeFiles/CNNs.dir/functions/cross_entropy.cpp.o
-CNNs: CMakeFiles/CNNs.dir/image_label_pair.cpp.o
-CNNs: CMakeFiles/CNNs.dir/Filter_ensemble.cpp.o
-CNNs: CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o
-CNNs: CMakeFiles/CNNs.dir/Filter_layer.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.o
 CNNs: CMakeFiles/CNNs.dir/functions/MSE.cpp.o
-CNNs: CMakeFiles/CNNs.dir/Trainer.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/Trainer.cpp.o
+CNNs: CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.o
 CNNs: CMakeFiles/CNNs.dir/build.make
 CNNs: /usr/local/lib/libopencv_gapi.so.4.5.3
 CNNs: /usr/local/lib/libopencv_stitching.so.4.5.3
@@ -398,7 +413,7 @@ CNNs: /usr/local/lib/libopencv_photo.so.4.5.3
 CNNs: /usr/local/lib/libopencv_imgproc.so.4.5.3
 CNNs: /usr/local/lib/libopencv_core.so.4.5.3
 CNNs: CMakeFiles/CNNs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable CNNs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable CNNs"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CNNs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

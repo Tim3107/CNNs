@@ -38,24 +38,24 @@ std::vector<double> Output_layer::forward_step(std::vector<double> input_vector)
 }
 
 double Output_layer::compute_loss(std::vector<double> target_values) {
-    if(this->loss_function == "cross_entropy"){
+    if(this->loss_function == "cross_entropy" && this->classification_function == "softmax"){
         this->loss = cross_entropy_list(this->output,target_values);
         return this->loss;
     }
 
-    if(this->loss_function == "MSE"){
+    if(this->loss_function == "MSE" && this->classification_function == "none"){
         this->loss = mse_compute_error(this->output,target_values);
         return this->loss;
     }
 }
 
 double Output_layer::compute_loss(std::vector<double> target_values,std::vector<double> given_output) {
-    if(this->loss_function == "cross_entropy"){
+    if(this->loss_function == "cross_entropy" && this->classification_function == "softmax"){
         this->loss = cross_entropy_list(given_output,target_values);
         return this->loss;
     }
 
-    if(this->loss_function == "MSE"){
+    if(this->loss_function == "MSE" && this->classification_function == "none"){
         this->loss = mse_compute_error(given_output,target_values);
         return this->loss;
     }

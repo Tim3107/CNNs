@@ -96,6 +96,22 @@ std::vector<double> vector_multiplication_elementwise(std::vector<double> input_
     return output;
 }
 
+std::vector<std::vector<double>> matrix_multiplication_elementwise(std::vector<std::vector<double>> input_matrix_1, std::vector<std::vector<double>> input_matrix_2, double scalar){
+    int rows = input_matrix_1.size();
+    int cols = input_matrix_1[0].size();
+
+    int rows_test = input_matrix_2.size();
+    int cols_test = input_matrix_2[0].size();
+
+    assert(rows == rows_test);
+    assert(cols == cols_test);
+    std::vector<std::vector<double>> output(rows,std::vector<double>(cols,0));
+    for (int i = 0; i<rows;i++){
+        output[i] = vector_multiplication_elementwise(input_matrix_1[i],input_matrix_2[i],scalar);
+    }
+    return output;
+}
+
 std::vector<double> vector_additions(std::vector<double> input_vector_1, std::vector<double> input_vector_2, double scalar){
     int rows = input_vector_1.size();
     int rows_test = input_vector_2.size();
@@ -132,9 +148,13 @@ std::vector<std::vector<double>> random_matrix(int rows, int cols, double range)
     for (int i = 0;i<rows;i++){
         for (int j = 0;j<cols;j++){
             //std::cout << distribution(generator) << std::endl;
+
             output_array[i][j] = distribution(generator);//unif(re);
+
         }
     }
-
+    //std::cout << "----------" << std::endl;
+   // display_array(output_array);
+    //std::cout << "----------" << std::endl;
     return output_array;
 }

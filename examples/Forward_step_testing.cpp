@@ -3,18 +3,18 @@
 
 #include <iostream>
 #include "vector"
-#include "../max_pooling.h"
+#include "../Tools/max_pooling.h"
 #include "opencv2/opencv.hpp"
-#include "../image_processing.h"
+#include "../Tools/image_processing.h"
 #include "../functions/softmax.h"
-#include "../Matrix_computations.h"
-#include "../image_label_pair.h"
-#include "../Save_load_image_label_pairs.h"
-#include "../extract_images.h"
-#include "../Filter.h"
-#include "../Filter_layer.h"
-#include "../FCC.h"
-#include "../output_layer.h"
+#include "../Tools/Matrix_computations.h"
+#include "../Tools/image_label_pair.h"
+#include "../Tools/Save_load_image_label_pairs.h"
+#include "../Tools/extract_images.h"
+#include "../Tools/Filter.h"
+#include "../Tools/Filter_layer.h"
+#include "../Tools/FCC.h"
+#include "../Tools/output_layer.h"
 
 using namespace std;
 

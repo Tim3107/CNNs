@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /home/tim/Tim/CNN_folder/CNNs/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/169/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -84,6 +74,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/clion/169/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target test
 test:
@@ -125,6 +125,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named ConvBP
+
+# Build rule for target.
+ConvBP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvBP
+.PHONY : ConvBP
+
+# fast build rule for target.
+ConvBP/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/build
+.PHONY : ConvBP/fast
 
 #=============================================================================
 # Target rules for targets named Fun_Testing
@@ -568,278 +581,551 @@ ContinuousUpdate/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousUpdate.dir/build.make CMakeFiles/ContinuousUpdate.dir/build
 .PHONY : ContinuousUpdate/fast
 
-FCC.o: FCC.cpp.o
-.PHONY : FCC.o
+Tools/FCC.o: Tools/FCC.cpp.o
+.PHONY : Tools/FCC.o
 
 # target to build an object file
-FCC.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/FCC.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/FCC.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/FCC.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/FCC.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/FCC.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/FCC.cpp.o
-.PHONY : FCC.cpp.o
+Tools/FCC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/FCC.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/FCC.cpp.o
+.PHONY : Tools/FCC.cpp.o
 
-FCC.i: FCC.cpp.i
-.PHONY : FCC.i
+Tools/FCC.i: Tools/FCC.cpp.i
+.PHONY : Tools/FCC.i
 
 # target to preprocess a source file
-FCC.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/FCC.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/FCC.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/FCC.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/FCC.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/FCC.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/FCC.cpp.i
-.PHONY : FCC.cpp.i
+Tools/FCC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/FCC.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/FCC.cpp.i
+.PHONY : Tools/FCC.cpp.i
 
-FCC.s: FCC.cpp.s
-.PHONY : FCC.s
+Tools/FCC.s: Tools/FCC.cpp.s
+.PHONY : Tools/FCC.s
 
 # target to generate assembly for a file
-FCC.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/FCC.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/FCC.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/FCC.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/FCC.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/FCC.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/FCC.cpp.s
-.PHONY : FCC.cpp.s
+Tools/FCC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/FCC.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/FCC.cpp.s
+.PHONY : Tools/FCC.cpp.s
 
-Filter.o: Filter.cpp.o
-.PHONY : Filter.o
+Tools/Filter.o: Tools/Filter.cpp.o
+.PHONY : Tools/Filter.o
 
 # target to build an object file
-Filter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter.cpp.o
-.PHONY : Filter.cpp.o
+Tools/Filter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter.cpp.o
+.PHONY : Tools/Filter.cpp.o
 
-Filter.i: Filter.cpp.i
-.PHONY : Filter.i
+Tools/Filter.i: Tools/Filter.cpp.i
+.PHONY : Tools/Filter.i
 
 # target to preprocess a source file
-Filter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter.cpp.i
-.PHONY : Filter.cpp.i
+Tools/Filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter.cpp.i
+.PHONY : Tools/Filter.cpp.i
 
-Filter.s: Filter.cpp.s
-.PHONY : Filter.s
+Tools/Filter.s: Tools/Filter.cpp.s
+.PHONY : Tools/Filter.s
 
 # target to generate assembly for a file
-Filter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter.cpp.s
-.PHONY : Filter.cpp.s
+Tools/Filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter.cpp.s
+.PHONY : Tools/Filter.cpp.s
 
-Filter_ensemble.o: Filter_ensemble.cpp.o
-.PHONY : Filter_ensemble.o
+Tools/Filter_Operations.o: Tools/Filter_Operations.cpp.o
+.PHONY : Tools/Filter_Operations.o
 
 # target to build an object file
-Filter_ensemble.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter_ensemble.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_ensemble.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_ensemble.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_ensemble.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_ensemble.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_ensemble.cpp.o
-.PHONY : Filter_ensemble.cpp.o
+Tools/Filter_Operations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_Operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_Operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_Operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_Operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_Operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_Operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.o
+.PHONY : Tools/Filter_Operations.cpp.o
 
-Filter_ensemble.i: Filter_ensemble.cpp.i
-.PHONY : Filter_ensemble.i
+Tools/Filter_Operations.i: Tools/Filter_Operations.cpp.i
+.PHONY : Tools/Filter_Operations.i
 
 # target to preprocess a source file
-Filter_ensemble.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter_ensemble.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_ensemble.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_ensemble.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_ensemble.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_ensemble.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_ensemble.cpp.i
-.PHONY : Filter_ensemble.cpp.i
+Tools/Filter_Operations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_Operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_Operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_Operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_Operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_Operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_Operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.i
+.PHONY : Tools/Filter_Operations.cpp.i
 
-Filter_ensemble.s: Filter_ensemble.cpp.s
-.PHONY : Filter_ensemble.s
+Tools/Filter_Operations.s: Tools/Filter_Operations.cpp.s
+.PHONY : Tools/Filter_Operations.s
 
 # target to generate assembly for a file
-Filter_ensemble.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter_ensemble.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_ensemble.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_ensemble.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_ensemble.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_ensemble.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_ensemble.cpp.s
-.PHONY : Filter_ensemble.cpp.s
+Tools/Filter_Operations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_Operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_Operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_Operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_Operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_Operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_Operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_Operations.cpp.s
+.PHONY : Tools/Filter_Operations.cpp.s
 
-Filter_layer.o: Filter_layer.cpp.o
-.PHONY : Filter_layer.o
+Tools/Filter_ensemble.o: Tools/Filter_ensemble.cpp.o
+.PHONY : Tools/Filter_ensemble.o
 
 # target to build an object file
-Filter_layer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_layer.cpp.o
-.PHONY : Filter_layer.cpp.o
+Tools/Filter_ensemble.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_ensemble.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.o
+.PHONY : Tools/Filter_ensemble.cpp.o
 
-Filter_layer.i: Filter_layer.cpp.i
-.PHONY : Filter_layer.i
+Tools/Filter_ensemble.i: Tools/Filter_ensemble.cpp.i
+.PHONY : Tools/Filter_ensemble.i
 
 # target to preprocess a source file
-Filter_layer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_layer.cpp.i
-.PHONY : Filter_layer.cpp.i
+Tools/Filter_ensemble.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_ensemble.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.i
+.PHONY : Tools/Filter_ensemble.cpp.i
 
-Filter_layer.s: Filter_layer.cpp.s
-.PHONY : Filter_layer.s
+Tools/Filter_ensemble.s: Tools/Filter_ensemble.cpp.s
+.PHONY : Tools/Filter_ensemble.s
 
 # target to generate assembly for a file
-Filter_layer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Filter_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Filter_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Filter_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Filter_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Filter_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Filter_layer.cpp.s
-.PHONY : Filter_layer.cpp.s
+Tools/Filter_ensemble.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_ensemble.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_ensemble.cpp.s
+.PHONY : Tools/Filter_ensemble.cpp.s
 
-Matrix_computations.o: Matrix_computations.cpp.o
-.PHONY : Matrix_computations.o
+Tools/Filter_layer.o: Tools/Filter_layer.cpp.o
+.PHONY : Tools/Filter_layer.o
 
 # target to build an object file
-Matrix_computations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Matrix_computations.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Matrix_computations.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Matrix_computations.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Matrix_computations.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Matrix_computations.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Matrix_computations.cpp.o
-.PHONY : Matrix_computations.cpp.o
+Tools/Filter_layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.o
+.PHONY : Tools/Filter_layer.cpp.o
 
-Matrix_computations.i: Matrix_computations.cpp.i
-.PHONY : Matrix_computations.i
+Tools/Filter_layer.i: Tools/Filter_layer.cpp.i
+.PHONY : Tools/Filter_layer.i
 
 # target to preprocess a source file
-Matrix_computations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Matrix_computations.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Matrix_computations.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Matrix_computations.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Matrix_computations.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Matrix_computations.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Matrix_computations.cpp.i
-.PHONY : Matrix_computations.cpp.i
+Tools/Filter_layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.i
+.PHONY : Tools/Filter_layer.cpp.i
 
-Matrix_computations.s: Matrix_computations.cpp.s
-.PHONY : Matrix_computations.s
+Tools/Filter_layer.s: Tools/Filter_layer.cpp.s
+.PHONY : Tools/Filter_layer.s
 
 # target to generate assembly for a file
-Matrix_computations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Matrix_computations.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Matrix_computations.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Matrix_computations.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Matrix_computations.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Matrix_computations.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Matrix_computations.cpp.s
-.PHONY : Matrix_computations.cpp.s
+Tools/Filter_layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Filter_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Filter_layer.cpp.s
+.PHONY : Tools/Filter_layer.cpp.s
 
-Save_load_image_label_pairs.o: Save_load_image_label_pairs.cpp.o
-.PHONY : Save_load_image_label_pairs.o
+Tools/Matrix_computations.o: Tools/Matrix_computations.cpp.o
+.PHONY : Tools/Matrix_computations.o
 
 # target to build an object file
-Save_load_image_label_pairs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Save_load_image_label_pairs.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Save_load_image_label_pairs.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Save_load_image_label_pairs.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Save_load_image_label_pairs.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Save_load_image_label_pairs.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.o
-.PHONY : Save_load_image_label_pairs.cpp.o
+Tools/Matrix_computations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Matrix_computations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.o
+.PHONY : Tools/Matrix_computations.cpp.o
 
-Save_load_image_label_pairs.i: Save_load_image_label_pairs.cpp.i
-.PHONY : Save_load_image_label_pairs.i
+Tools/Matrix_computations.i: Tools/Matrix_computations.cpp.i
+.PHONY : Tools/Matrix_computations.i
 
 # target to preprocess a source file
-Save_load_image_label_pairs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Save_load_image_label_pairs.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Save_load_image_label_pairs.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Save_load_image_label_pairs.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Save_load_image_label_pairs.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Save_load_image_label_pairs.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.i
-.PHONY : Save_load_image_label_pairs.cpp.i
+Tools/Matrix_computations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Matrix_computations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.i
+.PHONY : Tools/Matrix_computations.cpp.i
 
-Save_load_image_label_pairs.s: Save_load_image_label_pairs.cpp.s
-.PHONY : Save_load_image_label_pairs.s
+Tools/Matrix_computations.s: Tools/Matrix_computations.cpp.s
+.PHONY : Tools/Matrix_computations.s
 
 # target to generate assembly for a file
-Save_load_image_label_pairs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Save_load_image_label_pairs.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Save_load_image_label_pairs.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Save_load_image_label_pairs.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Save_load_image_label_pairs.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Save_load_image_label_pairs.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Save_load_image_label_pairs.cpp.s
-.PHONY : Save_load_image_label_pairs.cpp.s
+Tools/Matrix_computations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Matrix_computations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Matrix_computations.cpp.s
+.PHONY : Tools/Matrix_computations.cpp.s
 
-Trainer.o: Trainer.cpp.o
-.PHONY : Trainer.o
+Tools/Save_load_image_label_pairs.o: Tools/Save_load_image_label_pairs.cpp.o
+.PHONY : Tools/Save_load_image_label_pairs.o
 
 # target to build an object file
-Trainer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Trainer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Trainer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Trainer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Trainer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Trainer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Trainer.cpp.o
-.PHONY : Trainer.cpp.o
+Tools/Save_load_image_label_pairs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Save_load_image_label_pairs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.o
+.PHONY : Tools/Save_load_image_label_pairs.cpp.o
 
-Trainer.i: Trainer.cpp.i
-.PHONY : Trainer.i
+Tools/Save_load_image_label_pairs.i: Tools/Save_load_image_label_pairs.cpp.i
+.PHONY : Tools/Save_load_image_label_pairs.i
 
 # target to preprocess a source file
-Trainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Trainer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Trainer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Trainer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Trainer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Trainer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Trainer.cpp.i
-.PHONY : Trainer.cpp.i
+Tools/Save_load_image_label_pairs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Save_load_image_label_pairs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.i
+.PHONY : Tools/Save_load_image_label_pairs.cpp.i
 
-Trainer.s: Trainer.cpp.s
-.PHONY : Trainer.s
+Tools/Save_load_image_label_pairs.s: Tools/Save_load_image_label_pairs.cpp.s
+.PHONY : Tools/Save_load_image_label_pairs.s
 
 # target to generate assembly for a file
-Trainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Trainer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Trainer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Trainer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Trainer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Trainer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Trainer.cpp.s
-.PHONY : Trainer.cpp.s
+Tools/Save_load_image_label_pairs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Save_load_image_label_pairs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Save_load_image_label_pairs.cpp.s
+.PHONY : Tools/Save_load_image_label_pairs.cpp.s
+
+Tools/Trainer.o: Tools/Trainer.cpp.o
+.PHONY : Tools/Trainer.o
+
+# target to build an object file
+Tools/Trainer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Trainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Trainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Trainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Trainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Trainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Trainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Trainer.cpp.o
+.PHONY : Tools/Trainer.cpp.o
+
+Tools/Trainer.i: Tools/Trainer.cpp.i
+.PHONY : Tools/Trainer.i
+
+# target to preprocess a source file
+Tools/Trainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Trainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Trainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Trainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Trainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Trainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Trainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Trainer.cpp.i
+.PHONY : Tools/Trainer.cpp.i
+
+Tools/Trainer.s: Tools/Trainer.cpp.s
+.PHONY : Tools/Trainer.s
+
+# target to generate assembly for a file
+Tools/Trainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/Trainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/Trainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/Trainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/Trainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/Trainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/Trainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/Trainer.cpp.s
+.PHONY : Tools/Trainer.cpp.s
+
+Tools/extract_images.o: Tools/extract_images.cpp.o
+.PHONY : Tools/extract_images.o
+
+# target to build an object file
+Tools/extract_images.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/extract_images.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/extract_images.cpp.o
+.PHONY : Tools/extract_images.cpp.o
+
+Tools/extract_images.i: Tools/extract_images.cpp.i
+.PHONY : Tools/extract_images.i
+
+# target to preprocess a source file
+Tools/extract_images.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/extract_images.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/extract_images.cpp.i
+.PHONY : Tools/extract_images.cpp.i
+
+Tools/extract_images.s: Tools/extract_images.cpp.s
+.PHONY : Tools/extract_images.s
+
+# target to generate assembly for a file
+Tools/extract_images.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/extract_images.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/extract_images.cpp.s
+.PHONY : Tools/extract_images.cpp.s
+
+Tools/image_label_pair.o: Tools/image_label_pair.cpp.o
+.PHONY : Tools/image_label_pair.o
+
+# target to build an object file
+Tools/image_label_pair.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/image_label_pair.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.o
+.PHONY : Tools/image_label_pair.cpp.o
+
+Tools/image_label_pair.i: Tools/image_label_pair.cpp.i
+.PHONY : Tools/image_label_pair.i
+
+# target to preprocess a source file
+Tools/image_label_pair.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/image_label_pair.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.i
+.PHONY : Tools/image_label_pair.cpp.i
+
+Tools/image_label_pair.s: Tools/image_label_pair.cpp.s
+.PHONY : Tools/image_label_pair.s
+
+# target to generate assembly for a file
+Tools/image_label_pair.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/image_label_pair.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/image_label_pair.cpp.s
+.PHONY : Tools/image_label_pair.cpp.s
+
+Tools/image_processing.o: Tools/image_processing.cpp.o
+.PHONY : Tools/image_processing.o
+
+# target to build an object file
+Tools/image_processing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/image_processing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/image_processing.cpp.o
+.PHONY : Tools/image_processing.cpp.o
+
+Tools/image_processing.i: Tools/image_processing.cpp.i
+.PHONY : Tools/image_processing.i
+
+# target to preprocess a source file
+Tools/image_processing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/image_processing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/image_processing.cpp.i
+.PHONY : Tools/image_processing.cpp.i
+
+Tools/image_processing.s: Tools/image_processing.cpp.s
+.PHONY : Tools/image_processing.s
+
+# target to generate assembly for a file
+Tools/image_processing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/image_processing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/image_processing.cpp.s
+.PHONY : Tools/image_processing.cpp.s
+
+Tools/max_pooling.o: Tools/max_pooling.cpp.o
+.PHONY : Tools/max_pooling.o
+
+# target to build an object file
+Tools/max_pooling.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/max_pooling.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.o
+.PHONY : Tools/max_pooling.cpp.o
+
+Tools/max_pooling.i: Tools/max_pooling.cpp.i
+.PHONY : Tools/max_pooling.i
+
+# target to preprocess a source file
+Tools/max_pooling.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/max_pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.i
+.PHONY : Tools/max_pooling.cpp.i
+
+Tools/max_pooling.s: Tools/max_pooling.cpp.s
+.PHONY : Tools/max_pooling.s
+
+# target to generate assembly for a file
+Tools/max_pooling.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/max_pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/max_pooling.cpp.s
+.PHONY : Tools/max_pooling.cpp.s
+
+Tools/output_layer.o: Tools/output_layer.cpp.o
+.PHONY : Tools/output_layer.o
+
+# target to build an object file
+Tools/output_layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/output_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/output_layer.cpp.o
+.PHONY : Tools/output_layer.cpp.o
+
+Tools/output_layer.i: Tools/output_layer.cpp.i
+.PHONY : Tools/output_layer.i
+
+# target to preprocess a source file
+Tools/output_layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/output_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/output_layer.cpp.i
+.PHONY : Tools/output_layer.cpp.i
+
+Tools/output_layer.s: Tools/output_layer.cpp.s
+.PHONY : Tools/output_layer.s
+
+# target to generate assembly for a file
+Tools/output_layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/Tools/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/Tools/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/Tools/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/Tools/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/Tools/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/Tools/output_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/Tools/output_layer.cpp.s
+.PHONY : Tools/output_layer.cpp.s
 
 examples/Backward_step_testing.o: examples/Backward_step_testing.cpp.o
 .PHONY : examples/Backward_step_testing.o
@@ -913,6 +1199,30 @@ examples/Fun.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/examples/Fun.cpp.s
 .PHONY : examples/Fun.cpp.s
 
+examples/Test_Convolution_Backpropagation.o: examples/Test_Convolution_Backpropagation.cpp.o
+.PHONY : examples/Test_Convolution_Backpropagation.o
+
+# target to build an object file
+examples/Test_Convolution_Backpropagation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/examples/Test_Convolution_Backpropagation.cpp.o
+.PHONY : examples/Test_Convolution_Backpropagation.cpp.o
+
+examples/Test_Convolution_Backpropagation.i: examples/Test_Convolution_Backpropagation.cpp.i
+.PHONY : examples/Test_Convolution_Backpropagation.i
+
+# target to preprocess a source file
+examples/Test_Convolution_Backpropagation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/examples/Test_Convolution_Backpropagation.cpp.i
+.PHONY : examples/Test_Convolution_Backpropagation.cpp.i
+
+examples/Test_Convolution_Backpropagation.s: examples/Test_Convolution_Backpropagation.cpp.s
+.PHONY : examples/Test_Convolution_Backpropagation.s
+
+# target to generate assembly for a file
+examples/Test_Convolution_Backpropagation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/examples/Test_Convolution_Backpropagation.cpp.s
+.PHONY : examples/Test_Convolution_Backpropagation.cpp.s
+
 examples/simple_test.o: examples/simple_test.cpp.o
 .PHONY : examples/simple_test.o
 
@@ -961,50 +1271,12 @@ examples/xor_Problem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/examples/xor_Problem.cpp.s
 .PHONY : examples/xor_Problem.cpp.s
 
-extract_images.o: extract_images.cpp.o
-.PHONY : extract_images.o
-
-# target to build an object file
-extract_images.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/extract_images.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/extract_images.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/extract_images.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/extract_images.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/extract_images.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/extract_images.cpp.o
-.PHONY : extract_images.cpp.o
-
-extract_images.i: extract_images.cpp.i
-.PHONY : extract_images.i
-
-# target to preprocess a source file
-extract_images.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/extract_images.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/extract_images.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/extract_images.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/extract_images.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/extract_images.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/extract_images.cpp.i
-.PHONY : extract_images.cpp.i
-
-extract_images.s: extract_images.cpp.s
-.PHONY : extract_images.s
-
-# target to generate assembly for a file
-extract_images.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/extract_images.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/extract_images.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/extract_images.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/extract_images.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/extract_images.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/extract_images.cpp.s
-.PHONY : extract_images.cpp.s
-
 functions/MSE.o: functions/MSE.cpp.o
 .PHONY : functions/MSE.o
 
 # target to build an object file
 functions/MSE.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/MSE.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/MSE.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/MSE.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/MSE.cpp.o
@@ -1018,6 +1290,7 @@ functions/MSE.i: functions/MSE.cpp.i
 
 # target to preprocess a source file
 functions/MSE.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/MSE.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/MSE.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/MSE.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/MSE.cpp.i
@@ -1031,6 +1304,7 @@ functions/MSE.s: functions/MSE.cpp.s
 
 # target to generate assembly for a file
 functions/MSE.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/MSE.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/MSE.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/MSE.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/MSE.cpp.s
@@ -1044,6 +1318,7 @@ functions/ReLu.o: functions/ReLu.cpp.o
 
 # target to build an object file
 functions/ReLu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/ReLu.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/ReLu.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/ReLu.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/ReLu.cpp.o
@@ -1057,6 +1332,7 @@ functions/ReLu.i: functions/ReLu.cpp.i
 
 # target to preprocess a source file
 functions/ReLu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/ReLu.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/ReLu.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/ReLu.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/ReLu.cpp.i
@@ -1070,6 +1346,7 @@ functions/ReLu.s: functions/ReLu.cpp.s
 
 # target to generate assembly for a file
 functions/ReLu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/ReLu.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/ReLu.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/ReLu.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/ReLu.cpp.s
@@ -1083,6 +1360,7 @@ functions/cross_entropy.o: functions/cross_entropy.cpp.o
 
 # target to build an object file
 functions/cross_entropy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/cross_entropy.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/cross_entropy.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/cross_entropy.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/cross_entropy.cpp.o
@@ -1096,6 +1374,7 @@ functions/cross_entropy.i: functions/cross_entropy.cpp.i
 
 # target to preprocess a source file
 functions/cross_entropy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/cross_entropy.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/cross_entropy.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/cross_entropy.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/cross_entropy.cpp.i
@@ -1109,6 +1388,7 @@ functions/cross_entropy.s: functions/cross_entropy.cpp.s
 
 # target to generate assembly for a file
 functions/cross_entropy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/cross_entropy.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/cross_entropy.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/cross_entropy.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/cross_entropy.cpp.s
@@ -1122,6 +1402,7 @@ functions/sigmoid.o: functions/sigmoid.cpp.o
 
 # target to build an object file
 functions/sigmoid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/sigmoid.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/sigmoid.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/sigmoid.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/sigmoid.cpp.o
@@ -1135,6 +1416,7 @@ functions/sigmoid.i: functions/sigmoid.cpp.i
 
 # target to preprocess a source file
 functions/sigmoid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/sigmoid.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/sigmoid.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/sigmoid.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/sigmoid.cpp.i
@@ -1148,6 +1430,7 @@ functions/sigmoid.s: functions/sigmoid.cpp.s
 
 # target to generate assembly for a file
 functions/sigmoid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/sigmoid.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/sigmoid.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/sigmoid.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/sigmoid.cpp.s
@@ -1161,6 +1444,7 @@ functions/softmax.o: functions/softmax.cpp.o
 
 # target to build an object file
 functions/softmax.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/softmax.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/softmax.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/softmax.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/softmax.cpp.o
@@ -1174,6 +1458,7 @@ functions/softmax.i: functions/softmax.cpp.i
 
 # target to preprocess a source file
 functions/softmax.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/softmax.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/softmax.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/softmax.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/softmax.cpp.i
@@ -1187,6 +1472,7 @@ functions/softmax.s: functions/softmax.cpp.s
 
 # target to generate assembly for a file
 functions/softmax.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConvBP.dir/build.make CMakeFiles/ConvBP.dir/functions/softmax.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/functions/softmax.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/functions/softmax.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/functions/softmax.cpp.s
@@ -1194,84 +1480,6 @@ functions/softmax.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/functions/softmax.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/functions/softmax.cpp.s
 .PHONY : functions/softmax.cpp.s
-
-image_label_pair.o: image_label_pair.cpp.o
-.PHONY : image_label_pair.o
-
-# target to build an object file
-image_label_pair.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/image_label_pair.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_label_pair.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_label_pair.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_label_pair.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_label_pair.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_label_pair.cpp.o
-.PHONY : image_label_pair.cpp.o
-
-image_label_pair.i: image_label_pair.cpp.i
-.PHONY : image_label_pair.i
-
-# target to preprocess a source file
-image_label_pair.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/image_label_pair.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_label_pair.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_label_pair.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_label_pair.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_label_pair.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_label_pair.cpp.i
-.PHONY : image_label_pair.cpp.i
-
-image_label_pair.s: image_label_pair.cpp.s
-.PHONY : image_label_pair.s
-
-# target to generate assembly for a file
-image_label_pair.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/image_label_pair.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_label_pair.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_label_pair.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_label_pair.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_label_pair.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_label_pair.cpp.s
-.PHONY : image_label_pair.cpp.s
-
-image_processing.o: image_processing.cpp.o
-.PHONY : image_processing.o
-
-# target to build an object file
-image_processing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/image_processing.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_processing.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_processing.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_processing.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_processing.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_processing.cpp.o
-.PHONY : image_processing.cpp.o
-
-image_processing.i: image_processing.cpp.i
-.PHONY : image_processing.i
-
-# target to preprocess a source file
-image_processing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/image_processing.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_processing.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_processing.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_processing.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_processing.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_processing.cpp.i
-.PHONY : image_processing.cpp.i
-
-image_processing.s: image_processing.cpp.s
-.PHONY : image_processing.s
-
-# target to generate assembly for a file
-image_processing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/image_processing.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/image_processing.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/image_processing.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/image_processing.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/image_processing.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/image_processing.cpp.s
-.PHONY : image_processing.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -1296,84 +1504,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-max_pooling.o: max_pooling.cpp.o
-.PHONY : max_pooling.o
-
-# target to build an object file
-max_pooling.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/max_pooling.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/max_pooling.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/max_pooling.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/max_pooling.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/max_pooling.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/max_pooling.cpp.o
-.PHONY : max_pooling.cpp.o
-
-max_pooling.i: max_pooling.cpp.i
-.PHONY : max_pooling.i
-
-# target to preprocess a source file
-max_pooling.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/max_pooling.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/max_pooling.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/max_pooling.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/max_pooling.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/max_pooling.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/max_pooling.cpp.i
-.PHONY : max_pooling.cpp.i
-
-max_pooling.s: max_pooling.cpp.s
-.PHONY : max_pooling.s
-
-# target to generate assembly for a file
-max_pooling.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/max_pooling.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/max_pooling.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/max_pooling.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/max_pooling.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/max_pooling.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/max_pooling.cpp.s
-.PHONY : max_pooling.cpp.s
-
-output_layer.o: output_layer.cpp.o
-.PHONY : output_layer.o
-
-# target to build an object file
-output_layer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/output_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/output_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/output_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/output_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/output_layer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/output_layer.cpp.o
-.PHONY : output_layer.cpp.o
-
-output_layer.i: output_layer.cpp.i
-.PHONY : output_layer.i
-
-# target to preprocess a source file
-output_layer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/output_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/output_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/output_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/output_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/output_layer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/output_layer.cpp.i
-.PHONY : output_layer.cpp.i
-
-output_layer.s: output_layer.cpp.s
-.PHONY : output_layer.s
-
-# target to generate assembly for a file
-output_layer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fun_Testing.dir/build.make CMakeFiles/Fun_Testing.dir/output_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simple_Testing.dir/build.make CMakeFiles/Simple_Testing.dir/output_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Xor_Problems.dir/build.make CMakeFiles/Xor_Problems.dir/output_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_backward.dir/build.make CMakeFiles/Examples_backward.dir/output_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Examples_forward.dir/build.make CMakeFiles/Examples_forward.dir/output_layer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNs.dir/build.make CMakeFiles/CNNs.dir/output_layer.cpp.s
-.PHONY : output_layer.cpp.s
 
 # Help Target
 help:
@@ -1413,32 +1543,51 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... CNNs"
+	@echo "... ConvBP"
 	@echo "... Examples_backward"
 	@echo "... Examples_forward"
 	@echo "... Fun_Testing"
 	@echo "... Simple_Testing"
 	@echo "... Xor_Problems"
-	@echo "... FCC.o"
-	@echo "... FCC.i"
-	@echo "... FCC.s"
-	@echo "... Filter.o"
-	@echo "... Filter.i"
-	@echo "... Filter.s"
-	@echo "... Filter_ensemble.o"
-	@echo "... Filter_ensemble.i"
-	@echo "... Filter_ensemble.s"
-	@echo "... Filter_layer.o"
-	@echo "... Filter_layer.i"
-	@echo "... Filter_layer.s"
-	@echo "... Matrix_computations.o"
-	@echo "... Matrix_computations.i"
-	@echo "... Matrix_computations.s"
-	@echo "... Save_load_image_label_pairs.o"
-	@echo "... Save_load_image_label_pairs.i"
-	@echo "... Save_load_image_label_pairs.s"
-	@echo "... Trainer.o"
-	@echo "... Trainer.i"
-	@echo "... Trainer.s"
+	@echo "... Tools/FCC.o"
+	@echo "... Tools/FCC.i"
+	@echo "... Tools/FCC.s"
+	@echo "... Tools/Filter.o"
+	@echo "... Tools/Filter.i"
+	@echo "... Tools/Filter.s"
+	@echo "... Tools/Filter_Operations.o"
+	@echo "... Tools/Filter_Operations.i"
+	@echo "... Tools/Filter_Operations.s"
+	@echo "... Tools/Filter_ensemble.o"
+	@echo "... Tools/Filter_ensemble.i"
+	@echo "... Tools/Filter_ensemble.s"
+	@echo "... Tools/Filter_layer.o"
+	@echo "... Tools/Filter_layer.i"
+	@echo "... Tools/Filter_layer.s"
+	@echo "... Tools/Matrix_computations.o"
+	@echo "... Tools/Matrix_computations.i"
+	@echo "... Tools/Matrix_computations.s"
+	@echo "... Tools/Save_load_image_label_pairs.o"
+	@echo "... Tools/Save_load_image_label_pairs.i"
+	@echo "... Tools/Save_load_image_label_pairs.s"
+	@echo "... Tools/Trainer.o"
+	@echo "... Tools/Trainer.i"
+	@echo "... Tools/Trainer.s"
+	@echo "... Tools/extract_images.o"
+	@echo "... Tools/extract_images.i"
+	@echo "... Tools/extract_images.s"
+	@echo "... Tools/image_label_pair.o"
+	@echo "... Tools/image_label_pair.i"
+	@echo "... Tools/image_label_pair.s"
+	@echo "... Tools/image_processing.o"
+	@echo "... Tools/image_processing.i"
+	@echo "... Tools/image_processing.s"
+	@echo "... Tools/max_pooling.o"
+	@echo "... Tools/max_pooling.i"
+	@echo "... Tools/max_pooling.s"
+	@echo "... Tools/output_layer.o"
+	@echo "... Tools/output_layer.i"
+	@echo "... Tools/output_layer.s"
 	@echo "... examples/Backward_step_testing.o"
 	@echo "... examples/Backward_step_testing.i"
 	@echo "... examples/Backward_step_testing.s"
@@ -1448,15 +1597,15 @@ help:
 	@echo "... examples/Fun.o"
 	@echo "... examples/Fun.i"
 	@echo "... examples/Fun.s"
+	@echo "... examples/Test_Convolution_Backpropagation.o"
+	@echo "... examples/Test_Convolution_Backpropagation.i"
+	@echo "... examples/Test_Convolution_Backpropagation.s"
 	@echo "... examples/simple_test.o"
 	@echo "... examples/simple_test.i"
 	@echo "... examples/simple_test.s"
 	@echo "... examples/xor_Problem.o"
 	@echo "... examples/xor_Problem.i"
 	@echo "... examples/xor_Problem.s"
-	@echo "... extract_images.o"
-	@echo "... extract_images.i"
-	@echo "... extract_images.s"
 	@echo "... functions/MSE.o"
 	@echo "... functions/MSE.i"
 	@echo "... functions/MSE.s"
@@ -1472,21 +1621,9 @@ help:
 	@echo "... functions/softmax.o"
 	@echo "... functions/softmax.i"
 	@echo "... functions/softmax.s"
-	@echo "... image_label_pair.o"
-	@echo "... image_label_pair.i"
-	@echo "... image_label_pair.s"
-	@echo "... image_processing.o"
-	@echo "... image_processing.i"
-	@echo "... image_processing.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... max_pooling.o"
-	@echo "... max_pooling.i"
-	@echo "... max_pooling.s"
-	@echo "... output_layer.o"
-	@echo "... output_layer.i"
-	@echo "... output_layer.s"
 .PHONY : help
 
 

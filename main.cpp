@@ -1,14 +1,17 @@
 #include <iostream>
-#include "Filter.h"
+#include "Tools/Filter.h"
 #include "vector"
-#include "max_pooling.h"
+#include "Tools/max_pooling.h"
 #include "opencv2/opencv.hpp"
-#include "image_processing.h"
+#include "Tools/image_processing.h"
 #include "functions/softmax.h"
-#include "Matrix_computations.h"
-#include "image_label_pair.h"
-#include "Save_load_image_label_pairs.h"
-#include "extract_images.h"
+#include "Tools/Matrix_computations.h"
+#include "Tools/image_label_pair.h"
+#include "Tools/Save_load_image_label_pairs.h"
+#include "Tools/extract_images.h"
+#include "Tools/FCC.h"
+#include "Tools/Filter_layer.h"
+#include "Tools/Filter_Operations.h"
 
 using namespace cv;
 
@@ -124,6 +127,49 @@ int main() {
         std::cout <<"--------"<< std ::endl;
     }
 
+    FCC test_fully(3,2,"relu",{{1,2,1},{2,3,1}},{1,2});
+    display_vector(test_fully.forward_step({1,1,1}));
+
+
+    Filter_layer layer_testing(3,1,1,"relu",3,4);
+
+    std::vector<std::vector<std::vector<double>>> images = {{{0,1,1,0}  ,{0,0,0,1},  {0,0,0,0},  {1,0,1,0}},
+                                                            {{0,0,0,0}  ,{0,0,0,0},  {2,0,0,0},{0,0,0,1}},
+                                                            {{1,0,0,0} ,{0,0,0,0},  {0,0,1,0}, {1,1,1,0}}
+    };
+
+    std::vector<std::vector<std::vector<double>>> gradients = { {{0, 0, 0, 1},{0,0,1,0},{0,0,0,0},{1,0,0,0}},
+                                                                {{1, 0, 0, 1},{1,0,1,0},{0,0,0,0},{1,0,0,1}},
+                                                                {{0, 1, 0, 1},{0,0,1,0},{0,1,0,0},{1,0,0,0}},
+                                                                {{0, 0, 0, 1},{0,0,1,0},{0,0,1,0},{1,0,1,0}}};
+
+    std::vector<std::vector<std::vector<double>>> output_layer = layer_testing.run_Filter_one_channel(images);
+
+    for(int i = 0;i<output_layer.size();i++){
+        display_array(output_layer[i]);
+        std::cout <<"--------"<< std ::endl;
+    }
+
+    std::vector<std::vector<std::vector<double>>> backprop_grad = layer_testing.backward_step_filter_set(gradients);
+
+    for(int i = 0;i<backprop_grad.size();i++){
+        display_array(backprop_grad[i]);
+        std::cout <<"--------"<< std ::endl;
+    }
+
+
+    display_array(matrix_multiplication_elementwise(images[0],images[0],1));
+
+
+    std::vector<std::vector<double>> padding = {
+            {-2,-1,-3},
+            {-1,8,-1},
+            {-1,-1,-1}
+    };
+
+    std::vector<std::vector<double>> result = Filter_2D(1,1,padding,{{1,1,1},{1,1,1},{1,1,1}});
+
+    display_array(result);
 
 
     return 0;

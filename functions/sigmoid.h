@@ -35,4 +35,19 @@ std::vector<double> sigmoid_list(std::vector<double> input_vector);
  */
 std::vector<double> d_sigmoid_list(std::vector<double> input_vector);
 
+
+/**This routine computes sigmoid for arrays
+ *
+ * @param input_array : input image/array
+ * @return return_array : output after sigmoid is performed
+ */
+std::vector<std::vector<double>> sigmoid_array(std::vector<std::vector<double>> input_array);
+
+/**This routine computes d_sigmoid for arrays
+ *
+ * @param input_array : input image/array
+ * @return return_array : output after sigmoid is performed
+ */
+std::vector<std::vector<double>> d_sigmoid_array(std::vector<std::vector<double>> input_array);
+
 #endif //CNNS_SIGMOID_H

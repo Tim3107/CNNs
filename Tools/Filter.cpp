@@ -22,7 +22,7 @@ Filter::Filter(int dim_Filter, int padding,int stride,std::string activation_fun
     this->padding = padding;
     this->stride = stride;
     this->activation_function = activation_function;
-    this->Filter_grid = random_matrix(dim_Filter,dim_Filter,1);
+    this->Filter_grid = random_matrix(dim_Filter,dim_Filter,3);
 }
 
 Filter::Filter(int dim_Filter, int padding, int stride,std::string activation_function, std::vector<std::vector<double>> Filter_map) {
@@ -51,12 +51,47 @@ std::vector<std::vector<double>> Filter::run_Filter(std::vector<std::vector<doub
                         output_array[i][j] += temp[i*stride+inner_i][j*stride+inner_j]*Filter_grid[inner_i][inner_j];
                 }
             }
-            if(this->activation_function == "sigmoid"){
-                output_array[i][j] = sigmoid(output_array[i][j]);
+            //if(this->activation_function == "sigmoid"){
+            //    output_array[i][j] = sigmoid(output_array[i][j]);
+            //}
+            //else if(this->activation_function == "relu"){
+            //    output_array[i][j] = reLu(output_array[i][j]);
+            //}
+        }
+    }
+
+    return output_array;
+}
+
+
+std::vector<std::vector<double>>  Filter::run_Filter_flipped(std::vector<std::vector<double>> image_array){
+    int rows = image_array.size();
+    int cols = image_array[0].size();
+
+    int new_rows = (rows - dim_Filter + 2 * padding) / stride + 1;
+    int new_cols = (cols - dim_Filter + 2 * padding) / stride + 1;
+
+    std::vector<std::vector<double>> temp = apply_padding(image_array);
+
+    std::vector<std::vector<double>> output_array(new_rows, std::vector<double>(new_cols, 0));
+    int help_index_i = 0;
+    int help_index_j = 0;
+    for (int i = 0; i < new_rows; i++) {
+        for (int j = 0; j < new_cols; j++) {
+
+            //for (int inner_i = this->dim_Filter-1; inner_i >=0; inner_i--) {
+            //    for (int inner_j = this->dim_Filter-1; inner_j >=0; inner_j--) {
+            for (int inner_i = 0; inner_i < this->dim_Filter; inner_i++) {
+                for (int inner_j = 0; inner_j < this->dim_Filter; inner_j++) {
+                    output_array[i][j] += temp[i*stride+inner_i][j*stride+inner_j]*Filter_grid[this->dim_Filter-1-inner_i][this->dim_Filter-1-inner_j];
+                }
             }
-            else if(this->activation_function == "relu"){
-                output_array[i][j] = reLu(output_array[i][j]);
-            }
+            //if(this->activation_function == "sigmoid"){
+            //    output_array[i][j] = sigmoid(output_array[i][j]);
+            //}
+            //else if(this->activation_function == "relu"){
+            //    output_array[i][j] = reLu(output_array[i][j]);
+            //}
         }
     }
 
@@ -101,3 +136,16 @@ void Filter::fill_matrix(std::vector<std::vector<double>> & mat){
 }
 
 
+void Filter::update_filter(std::vector<std::vector<double>> update_filter){
+    int rows = update_filter.size();
+    int cols = update_filter[0].size();
+
+    assert(rows == this->dim_Filter);
+    assert(cols == this->dim_Filter);
+    this->Filter_grid = add_matrices(this->Filter_grid, matrix_scalar(update_filter,-1*this->learning_rate));
+}
+
+
+void Filter::setter_learning_rate(double learning_rate){
+    this->learning_rate = learning_rate;
+}

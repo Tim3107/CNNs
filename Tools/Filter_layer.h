@@ -13,10 +13,12 @@ class Filter_layer{
     int Filter_dim;
     int padding;
     int stride;
+    double learning_rate = 1.0;
     std::string activation_function;
     int input_channels;
     int output_channels;
     Filter_set* filter_sets;
+    std::vector<std::vector<std::vector<double>>> input;
 
 private:
 public:
@@ -45,6 +47,19 @@ public:
  * @return output_image : 3D output with height, width and output_channels
  */
     std::vector<std::vector<std::vector<double>>> run_Filter_one_channel(std::vector<std::vector<double>> input_image);
+
+    /**This routine computes the backpropagation step for one Filter_set
+     *
+     * @param input_successor : BP input gradient from successor
+     * @return output_array : Gradient of
+     */
+    std::vector<std::vector<std::vector<double>>> backward_step_filter_set(std::vector<std::vector<std::vector<double>>> input_successor);
+
+    /**This method allows to set the learning rate for all filter_sets.
+     *
+     * @param learning_rate
+     */
+    void setter_learning_rate(double learning_rate);
 };
 
 

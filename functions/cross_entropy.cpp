@@ -18,7 +18,7 @@ double cross_entropy(double x, double label){
     return -label* log(x);
 }
 double d_cross_entropy(double x, double label){
-    return cross_entropy(x,label)*(1- cross_entropy(x,label));
+    return label*1/(x);
 }
 
 double cross_entropy_list(std::vector<double> input_vector, std::vector<double> target_values){

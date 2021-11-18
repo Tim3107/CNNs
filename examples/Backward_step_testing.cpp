@@ -3,11 +3,11 @@
 //
 
 #include "vector"
-#include "../Matrix_computations.h"
-#include "../FCC.h"
-#include "../output_layer.h"
-#include "../image_label_pair.h"
-#include "../image_processing.h"
+#include "../Tools/Matrix_computations.h"
+#include "../Tools/FCC.h"
+#include "../Tools/output_layer.h"
+#include "../Tools/image_label_pair.h"
+#include "../Tools/image_processing.h"
 
 double kkkk(std::vector<std::vector<double>> features, std::vector<std::vector<double>> labels,FCC fully_1,FCC fully_2,FCC fully_3,Output_layer outputLayer){
     double  loss = 0;

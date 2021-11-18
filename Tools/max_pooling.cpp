@@ -43,8 +43,6 @@ std::vector<std::vector<double>> Max_pooling::run_max_pooling(std::vector<std::v
             index_2 = 0;
         }
     }
-    std::cout <<"---------" << std::endl;
-    display_array(this->max_array_3D[channel]);
 
     return output_array;
 
@@ -78,7 +76,6 @@ std::vector<std::vector<std::vector<double>>> Max_pooling::backward_pooler(std::
     int rows_test = this->max_array_3D[0].size();
     int cols_test = this->max_array_3D[0][0].size();
 
-    std::cout << "-----------------"<< std ::endl;
 
     assert(channels == channels_test);
     assert(this->stride*rows == rows_test);

@@ -6,7 +6,7 @@
 #define CNNS_MSE_H
 
 #include "vector"
-#include "../Matrix_computations.h"
+#include "../Tools/Matrix_computations.h"
 #include "iostream"
 #include "math.h"
 

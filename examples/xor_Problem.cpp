@@ -3,11 +3,11 @@
 //
 
 #include "vector"
-#include "../Matrix_computations.h"
-#include "../FCC.h"
-#include "../output_layer.h"
-#include "../image_label_pair.h"
-#include "../image_processing.h"
+#include "../Tools/Matrix_computations.h"
+#include "../Tools/FCC.h"
+#include "../Tools/output_layer.h"
+#include "../Tools/image_label_pair.h"
+#include "../Tools/image_processing.h"
 #include <stdlib.h>
 #include "random"
 double kkkk(std::vector<std::vector<double>> features, std::vector<std::vector<double>> labels, FCC fully_1,FCC fully_2, Output_layer outputLayer){
@@ -44,10 +44,10 @@ int main(){
     std::vector<std::vector<double>> features = {feature_1,feature_2,feature_3,feature_4};
     std::vector<std::vector<double>> labels = {label_1,label_2,label_3,label_4};
 
-    FCC fully_1(2,3,"relu");
-    fully_1.setter_learning_rate(1);
-    FCC fully_2(3,1,"relu");
-    fully_2.setter_learning_rate(1);
+    FCC fully_1(2,2,"relu");
+    fully_1.setter_learning_rate(0.001);
+    FCC fully_2(2,1,"relu");
+    fully_2.setter_learning_rate(0.001);
     Output_layer outputLayer(1,1,"MSE","none");
 
 
@@ -65,9 +65,9 @@ int main(){
     std::vector<double> backprop_2 = fully_2.backward_step(backprop_1);
     std::vector<double> backprop_3 = fully_1.backward_step(backprop_2);
 
-    for (int i = 0;i<10000;i++) {
-        fully_1.setter_learning_rate(0.1);
-        fully_2.setter_learning_rate(0.1);
+    for (int i = 0;i<5000;i++) {
+        fully_1.setter_learning_rate(0.01);
+        fully_2.setter_learning_rate(0.01);
         random_number = rand() % 4;
         temp1 = fully_1.forward_step(features[random_number]);
         temp2 = fully_2.forward_step(temp1);

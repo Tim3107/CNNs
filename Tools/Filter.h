@@ -8,14 +8,15 @@
 #include <iostream>
 #include <vector>
 #include "algorithm"
-#include "functions/sigmoid.h"
-#include "functions/ReLu.h"
+#include "../functions/sigmoid.h"
+#include "../functions/ReLu.h"
 #include "Matrix_computations.h"
 
 class Filter {
     int dim_Filter;
     int padding;
     int stride;
+    double learning_rate = 1.0;
     std::vector<std::vector<double>> Filter_grid;
     std::string activation_function;
 
@@ -50,11 +51,18 @@ public:
     * @param Filter_map : Default-Filter is given
     */
     Filter(int dim_Filter, int padding,int stride,std::string activation_function,std::vector<std::vector<double>> Filter_map);
+
     /** Filter function
     * @param image_array : Array which is going to be filtered
      *@param [out] filtered_array : filtered Array
     */
     std::vector<std::vector<double>>  run_Filter(std::vector<std::vector<double>> image_array);
+
+    /** Filter function performed with changed orders. Important for BP with CNNs and gradients
+    * @param image_array : Array which is going to be filtered
+    * @param [out] filtered_array : filtered Array
+    */
+    std::vector<std::vector<double>>  run_Filter_flipped(std::vector<std::vector<double>> image_array);
 
 
     /** Function which checks whether current pair of indices is relevant for padding
@@ -84,6 +92,18 @@ public:
      * @param mat
      */
     void fill_matrix(std::vector<std::vector<double>> & mat);
+
+    /**This setter method updates the current filter. Important for Gradient decent in BP.
+     *
+     * @param update_filter : Update Filter
+     */
+    void update_filter(std::vector<std::vector<double>> update_filter);
+
+    /**This method allows to set the learning rate
+     *
+     * @param learning_rate : learning rate for gradient decent
+     */
+    void setter_learning_rate(double learning_rate);
 
 
 };

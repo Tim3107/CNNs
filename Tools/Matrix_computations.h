@@ -52,6 +52,15 @@ std::vector<std::vector<double>> matrix_scalar(std::vector<std::vector<double>> 
 
 /**This routine is able to multiply two vectors elementwise
  *
+ * @param input_matrix_1 : target onto which computations are apllied
+ * @param input_matrix_2 : second matrix
+ * @param scalar : scalar to multiply result
+ * @return returns input_matrix_1 * input_matrix_2 * scalar
+ */
+std::vector<std::vector<double>> matrix_multiplication_elementwise(std::vector<std::vector<double>> input_matrix_1, std::vector<std::vector<double>> input_matrix_2, double scalar);
+
+/**This routine is able to multiply two vectors elementwise
+ *
  * @param input_vector_1 : target onto which computations are apllied
  * @param input_vector_2 : second vector
  * @param scalar : scalar to multiply result

@@ -7,10 +7,10 @@
 #include "iostream"
 #include "vector"
 #include "string"
-#include "functions/softmax.h"
-#include "functions/cross_entropy.h"
+#include "../functions/softmax.h"
+#include "../functions/cross_entropy.h"
 #include "Matrix_computations.h"
-#include "functions/MSE.h"
+#include "../functions/MSE.h"
 
 
 class Output_layer{

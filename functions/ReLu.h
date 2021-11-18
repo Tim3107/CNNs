@@ -34,5 +34,18 @@ std::vector<double> d_reLu_list(std::vector<double> input_vector);
  * @param[out] result
  */
 std::vector<double> reLu_list(std::vector<double> input_vector);
+/**This routine computes relu for arrays
+ *
+ * @param input_array : input image/array
+ * @return return_array : output after relu is performed
+ */
+std::vector<std::vector<double>> reLu_array(std::vector<std::vector<double>> input_array);
+
+/**This routine computes d_relu for arrays
+ *
+ * @param input_array : input image/array
+ * @return return_array : output after relu is performed
+ */
+std::vector<std::vector<double>> d_reLu_array(std::vector<std::vector<double>> input_array);
 
 #endif //CNNS_RELU_H

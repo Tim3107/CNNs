@@ -3,6 +3,7 @@
 //
 
 #include "image_processing.h"
+#include "Matrix_computations.h"
 using namespace cv;
 
 
@@ -13,6 +14,12 @@ std::vector<std::vector<double>> conversion_to_std_vector(cv::Mat input_array){
     std::vector<std::vector<double>> output_array(rows, std::vector<double>(cols, 0));
     for(int i = 0;i<rows;i++){
         input_array.row(i).copyTo(output_array[i]);
+    }
+
+    for (int i = 0;i<rows;i++){
+        for (int j = 0;j<cols;j++){
+            output_array[i][j] = output_array[i][j]/150;
+        }
     }
     return output_array;
 
