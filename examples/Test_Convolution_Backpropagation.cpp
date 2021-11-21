@@ -203,9 +203,9 @@ int main(){
     Filter_layer filterLayer_1(3,1,1,"sigmoid",1,4);
     Filter_layer filterLayer_2(3,1,1,"sigmoid",4,8);
     Filter_layer filterLayer_3(3,1,1,"sigmoid",8,10);
-    filterLayer_1.setter_learning_rate(0.005);
-    filterLayer_2.setter_learning_rate(0.005);
-    filterLayer_3.setter_learning_rate(0.005);
+    filterLayer_1.setter_learning_rate(0.05);
+    filterLayer_2.setter_learning_rate(0.05);
+    filterLayer_3.setter_learning_rate(0.05);
 
     Max_pooling max_pooler_1(10,10,0);
     Max_pooling max_pooler_2(5,5,0);
@@ -213,8 +213,8 @@ int main(){
 
     FCC fully_1(10,8,"relu");
     FCC fully_2(8,2,"relu");
-    fully_1.setter_learning_rate(0.005);
-    fully_2.setter_learning_rate(0.005);
+    fully_1.setter_learning_rate(0.05);
+    fully_2.setter_learning_rate(0.05);
     Output_layer outputLayer(2,2,"MSE","none");
     //display_array(circles[0]);
     std::vector<std::vector<std::vector<double>>> forward_1 = filterLayer_1.run_Filter_one_channel(circles[0]);
@@ -298,7 +298,7 @@ int main(){
         backwards_7 = filterLayer_1.backward_step_filter_set(backwards_6);
         lossss = full_error(filterLayer_1,filterLayer_2,filterLayer_3,max_pooler_1,max_pooler_2,max_pooler_3,fully_1,fully_2,outputLayer,pipes,circles,label_circles,label_pipes);
         std::cout << "overall Error is: "<<lossss<<std::endl;
-        if(lossss<0.05 || abs(lossss-6.93147)<0.0001) {
+        if(lossss<0.1 || abs(lossss-6.93147)<0.0001) {
             i = 100000;
         }
 

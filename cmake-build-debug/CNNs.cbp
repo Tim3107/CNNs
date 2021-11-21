@@ -5,7 +5,7 @@
 		<Option title="CNNs"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\functions\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\functions\;CMake Files\Tools\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/tim/Tim/CNN_folder/CNNs/cmake-build-debug"/>
@@ -762,6 +762,9 @@
 		</Unit>
 		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/functions/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\functions\"/>
+		</Unit>
+		<Unit filename="/home/tim/Tim/CNN_folder/CNNs/Tools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tools\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

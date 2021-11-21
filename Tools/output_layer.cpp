@@ -4,7 +4,9 @@
 
 #include "output_layer.h"
 
+Output_layer::Output_layer() {
 
+}
 
 Output_layer::Output_layer(int input_dim, int output_dim, std::string loss_function, std::string classification_function){
     this->input_dim = input_dim;

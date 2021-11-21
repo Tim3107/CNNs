@@ -4,6 +4,10 @@
 
 #include "max_pooling.h"
 
+Max_pooling::Max_pooling() {
+
+}
+
 Max_pooling::Max_pooling(int dim_Filter, int stride, int padding) {
     this->dim_Filter = dim_Filter;
     this->stride = stride;

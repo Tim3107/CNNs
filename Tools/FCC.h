@@ -30,6 +30,11 @@ class FCC{
 private:
 
 public:
+    /**Default Constructor
+     *
+     */
+    FCC();
+
     /**@brief constructor creates object which consists of weight matrix and bias vector. This type of constructor sets
      * the activation function default to "sigmoid"
      *

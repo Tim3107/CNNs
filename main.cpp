@@ -12,6 +12,7 @@
 #include "Tools/FCC.h"
 #include "Tools/Filter_layer.h"
 #include "Tools/Filter_Operations.h"
+#include "Tools/Trainer.h"
 
 using namespace cv;
 
@@ -170,6 +171,22 @@ int main() {
     std::vector<std::vector<double>> result = Filter_2D(1,1,padding,{{1,1,1},{1,1,1},{1,1,1}});
 
     display_array(result);
+
+
+    Output_layer outputLayer(2,2,"MSE","none");
+    Trainer trainer("/home/tim/Tim/CNN_folder/CNNs/Pictures_Testing/",{"bars_","circle_","pipe_"},{{1,4},{1,5},{1,6}},400,3,1000,0.1,outputLayer);
+
+    std::vector<std::vector<double>> jjas = {{1,2},{1,2,3}};
+
+    trainer.initialize_max_poolers({1,2,3},{1,2,3},{1,2,3});
+    trainer.initialize_filter_layers({3,3,3},{1,1,1},{1,1,1},{"sigmoid","sigmoid","sigmoid"},{1,5,10},{5,10,15});
+    trainer.initialize_fullys({15,10,5},{10,5,2},{"relu","relu","relu"});
+
+    trainer.get_features();
+
+
+
+
 
 
     return 0;

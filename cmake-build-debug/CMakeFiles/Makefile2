@@ -71,10 +71,12 @@ all: CMakeFiles/Examples_backward.dir/all
 all: CMakeFiles/Examples_forward.dir/all
 all: CMakeFiles/CNNs.dir/all
 all: functions/all
+all: Tools/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: functions/preinstall
+preinstall: Tools/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -114,7 +116,23 @@ clean: CMakeFiles/ExperimentalSubmit.dir/clean
 clean: CMakeFiles/ContinuousStart.dir/clean
 clean: CMakeFiles/ContinuousUpdate.dir/clean
 clean: functions/clean
+clean: Tools/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Tools
+
+# Recursive "all" directory target.
+Tools/all:
+.PHONY : Tools/all
+
+# Recursive "preinstall" directory target.
+Tools/preinstall:
+.PHONY : Tools/preinstall
+
+# Recursive "clean" directory target.
+Tools/clean:
+.PHONY : Tools/clean
 
 #=============================================================================
 # Directory level rules for directory functions

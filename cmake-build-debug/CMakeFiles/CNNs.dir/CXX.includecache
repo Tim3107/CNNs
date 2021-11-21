@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/tim/Tim/CNN_folder/CNNs/Tools/FCC.cpp
-FCC.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/FCC.h
-opencv2/opencv.hpp
-/home/tim/Tim/CNN_folder/CNNs/Tools/opencv2/opencv.hpp
-../functions/sigmoid.h
-/home/tim/Tim/CNN_folder/CNNs/functions/sigmoid.h
-../functions/ReLu.h
-/home/tim/Tim/CNN_folder/CNNs/functions/ReLu.h
-
 /home/tim/Tim/CNN_folder/CNNs/Tools/FCC.h
 vector
 -
@@ -38,10 +28,6 @@ iostream
 cctype
 -
 
-/home/tim/Tim/CNN_folder/CNNs/Tools/Filter.cpp
-Filter.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/Filter.h
-
 /home/tim/Tim/CNN_folder/CNNs/Tools/Filter.h
 iostream
 -
@@ -56,10 +42,6 @@ algorithm
 Matrix_computations.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.h
 
-/home/tim/Tim/CNN_folder/CNNs/Tools/Filter_Operations.cpp
-Filter_Operations.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/Filter_Operations.h
-
 /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_Operations.h
 Matrix_computations.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.h
@@ -67,10 +49,6 @@ iostream
 /home/tim/Tim/CNN_folder/CNNs/Tools/iostream
 vector
 /home/tim/Tim/CNN_folder/CNNs/Tools/vector
-
-/home/tim/Tim/CNN_folder/CNNs/Tools/Filter_ensemble.cpp
-Filter_ensemble.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/Filter_ensemble.h
 
 /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_ensemble.h
 Filter.h
@@ -86,19 +64,11 @@ Matrix_computations.h
 Filter_Operations.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_Operations.h
 
-/home/tim/Tim/CNN_folder/CNNs/Tools/Filter_layer.cpp
-Filter_layer.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/Filter_layer.h
-
 /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_layer.h
 vector
 /home/tim/Tim/CNN_folder/CNNs/Tools/vector
 Filter_ensemble.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_ensemble.h
-
-/home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.cpp
-Matrix_computations.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.h
 
 /home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.h
 vector
@@ -111,10 +81,6 @@ iostream
 /home/tim/Tim/CNN_folder/CNNs/Tools/iostream
 image_processing.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.h
-
-/home/tim/Tim/CNN_folder/CNNs/Tools/Save_load_image_label_pairs.cpp
-Save_load_image_label_pairs.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/Save_load_image_label_pairs.h
 
 /home/tim/Tim/CNN_folder/CNNs/Tools/Save_load_image_label_pairs.h
 string
@@ -132,19 +98,25 @@ image_label_pair.h
 image_processing.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.h
 
-/home/tim/Tim/CNN_folder/CNNs/Tools/Trainer.cpp
-Trainer.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/Trainer.h
-
 /home/tim/Tim/CNN_folder/CNNs/Tools/Trainer.h
 vector
 /home/tim/Tim/CNN_folder/CNNs/Tools/vector
 iostream
 /home/tim/Tim/CNN_folder/CNNs/Tools/iostream
-
-/home/tim/Tim/CNN_folder/CNNs/Tools/extract_images.cpp
-extract_images.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/extract_images.h
+string
+/home/tim/Tim/CNN_folder/CNNs/Tools/string
+../Tools/max_pooling.h
+/home/tim/Tim/CNN_folder/CNNs/Tools/max_pooling.h
+../Tools/Filter_layer.h
+/home/tim/Tim/CNN_folder/CNNs/Tools/Filter_layer.h
+../Tools/Matrix_computations.h
+/home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.h
+../Tools/FCC.h
+/home/tim/Tim/CNN_folder/CNNs/Tools/FCC.h
+../Tools/image_processing.h
+/home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.h
+../Tools/output_layer.h
+/home/tim/Tim/CNN_folder/CNNs/Tools/output_layer.h
 
 /home/tim/Tim/CNN_folder/CNNs/Tools/extract_images.h
 vector
@@ -158,10 +130,6 @@ image_label_pair.h
 image_processing.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.h
 
-/home/tim/Tim/CNN_folder/CNNs/Tools/image_label_pair.cpp
-image_label_pair.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/image_label_pair.h
-
 /home/tim/Tim/CNN_folder/CNNs/Tools/image_label_pair.h
 vector
 /home/tim/Tim/CNN_folder/CNNs/Tools/vector
@@ -169,12 +137,6 @@ opencv2/opencv.hpp
 /home/tim/Tim/CNN_folder/CNNs/Tools/opencv2/opencv.hpp
 string
 /home/tim/Tim/CNN_folder/CNNs/Tools/string
-
-/home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.cpp
-image_processing.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.h
-Matrix_computations.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.h
 
 /home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.h
 vector
@@ -188,19 +150,11 @@ iterator
 sstream
 -
 
-/home/tim/Tim/CNN_folder/CNNs/Tools/max_pooling.cpp
-max_pooling.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/max_pooling.h
-
 /home/tim/Tim/CNN_folder/CNNs/Tools/max_pooling.h
 vector
 /home/tim/Tim/CNN_folder/CNNs/Tools/vector
 image_processing.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/image_processing.h
-
-/home/tim/Tim/CNN_folder/CNNs/Tools/output_layer.cpp
-output_layer.h
-/home/tim/Tim/CNN_folder/CNNs/Tools/output_layer.h
 
 /home/tim/Tim/CNN_folder/CNNs/Tools/output_layer.h
 iostream
@@ -216,10 +170,6 @@ string
 Matrix_computations.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/Matrix_computations.h
 ../functions/MSE.h
-/home/tim/Tim/CNN_folder/CNNs/functions/MSE.h
-
-/home/tim/Tim/CNN_folder/CNNs/functions/MSE.cpp
-MSE.h
 /home/tim/Tim/CNN_folder/CNNs/functions/MSE.h
 
 /home/tim/Tim/CNN_folder/CNNs/functions/MSE.h
@@ -285,6 +235,8 @@ Tools/Filter_layer.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_layer.h
 Tools/Filter_Operations.h
 /home/tim/Tim/CNN_folder/CNNs/Tools/Filter_Operations.h
+Tools/Trainer.h
+/home/tim/Tim/CNN_folder/CNNs/Tools/Trainer.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

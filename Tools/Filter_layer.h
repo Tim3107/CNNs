@@ -22,6 +22,11 @@ class Filter_layer{
 
 private:
 public:
+    /**Default constructor for initializations
+     *
+     */
+    Filter_layer();
+
     /**@brief Constructor. Instances are objects which consist of couple Filter_ensembles. One for each output_channel
      *
      * @param Filter_dim : Dim of the Filters which are used.

@@ -4,6 +4,9 @@
 
 #include "Filter_layer.h"
 
+Filter_layer::Filter_layer() {
+
+}
 
 Filter_layer::Filter_layer(int Filter_dim, int padding, int stride,std::string activation_function, int input_channels, int output_channels) {
     this->Filter_dim = Filter_dim;

@@ -19,6 +19,12 @@ class Max_pooling{
 private:
 
 public:
+
+    /**Default Constructor
+     *
+     */
+    Max_pooling();
+
     /** \brief Constructor of a Filter
     * @param dim_Filter: Dimension of Filter
     * @param padding : Number of added zeros on each edge

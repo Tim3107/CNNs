@@ -26,6 +26,11 @@ private:
 
 public:
 
+    /**Default Constructor
+     *
+     */
+    Output_layer();
+
     /** Constructor of output_layer. This
      *
      * @param input_dim : Dimension of previous layer

@@ -7,7 +7,9 @@
 #include "../functions/sigmoid.h"
 #include "../functions/ReLu.h"
 
+FCC::FCC() {
 
+}
 
 FCC::FCC(int input_dim, int output_dim) {
     this->input_dim = input_dim;

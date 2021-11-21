@@ -10,6 +10,7 @@ FIND_PACKAGE(OpenCV REQUIRED HINTS ${OPENCV4} ${OPENCV4} ../ ../../ $ENV{OPENCV4
 
 
 add_subdirectory(functions)
+add_subdirectory(Tools)
 
 INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS})
 
