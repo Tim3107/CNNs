@@ -18,7 +18,7 @@ std::vector<std::vector<double>> conversion_to_std_vector(cv::Mat input_array){
 
     for (int i = 0;i<rows;i++){
         for (int j = 0;j<cols;j++){
-            output_array[i][j] = output_array[i][j];
+            output_array[i][j] = output_array[i][j]/150;
         }
     }
     return output_array;

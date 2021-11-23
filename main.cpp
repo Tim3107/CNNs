@@ -95,41 +95,11 @@ int main() {
 
     image_extractor.run_extractor(labels);
 
-    for (int i = 0; i<6; i++){
-
-        display_array(labels[i].get_Image());
-        std::cout << labels[i].get_Label() << std::endl;
-
-    }
-
     Filter filter(4,2,1);
     filter.run_Filter(test_array);
 
-    //
-
-
-    Max_pooling max_pooler_Testing(2,2,0);
-
-    std::vector<std::vector<std::vector<double>>> test_array_pooler = {{{200,3,5,3}  ,{2,3,6,4},  {2,4,5,3},  {1,9,17,3}},
-                                                                       {{2,3,5,3}  ,{2,3,6,4},  {2,14,15,3},{1,9,7,3}},
-                                                                       {{12,3,5,3} ,{2,3,6,4},  {2,4,15,3}, {1,19,17,3}},
-                                                                       {{2,3,15,3} ,{2,3,6,4},  {2,14,5,3}, {1,9,7,13}}};
-
-    std::vector<std::vector<std::vector<double>>> Testoutput = max_pooler_Testing.run_max_pooling_3D(test_array_pooler);
-
-    std::vector<std::vector<std::vector<double>>> Testeror = max_pooler_Testing.backward_pooler(Testoutput);
-
-    for(int i = 0;i<Testeror.size();i++){
-        display_array(Testeror[i]);
-        std::cout <<"--------"<< std ::endl;
-    }
-    for(int i = 0;i<Testoutput.size();i++){
-        display_array(Testoutput[i]);
-        std::cout <<"--------"<< std ::endl;
-    }
-
     FCC test_fully(3,2,"relu",{{1,2,1},{2,3,1}},{1,2});
-    display_vector(test_fully.forward_step({1,1,1}));
+    //display_vector(test_fully.forward_step({1,1,1}));
 
 
     Filter_layer layer_testing(3,1,1,"relu",3,4);
@@ -144,22 +114,18 @@ int main() {
                                                                 {{0, 1, 0, 1},{0,0,1,0},{0,1,0,0},{1,0,0,0}},
                                                                 {{0, 0, 0, 1},{0,0,1,0},{0,0,1,0},{1,0,1,0}}};
 
-    std::vector<std::vector<std::vector<double>>> output_layer = layer_testing.run_Filter_one_channel(images);
+    //std::vector<std::vector<std::vector<double>>> output_layer = layer_testing.run_Filter_one_channel(images);
 
-    for(int i = 0;i<output_layer.size();i++){
-        display_array(output_layer[i]);
-        std::cout <<"--------"<< std ::endl;
-    }
 
-    std::vector<std::vector<std::vector<double>>> backprop_grad = layer_testing.backward_step_filter_set(gradients);
+    //std::vector<std::vector<std::vector<double>>> backprop_grad = layer_testing.backward_step_filter_set(gradients);
 
-    for(int i = 0;i<backprop_grad.size();i++){
+    /*for(int i = 0;i<backprop_grad.size();i++){
         display_array(backprop_grad[i]);
         std::cout <<"--------"<< std ::endl;
     }
+    */
 
-
-    display_array(matrix_multiplication_elementwise(images[0],images[0],1));
+   // display_array(matrix_multiplication_elementwise(images[0],images[0],1));
 
 
     std::vector<std::vector<double>> padding = {
@@ -168,21 +134,30 @@ int main() {
             {-1,-1,-1}
     };
 
-    std::vector<std::vector<double>> result = Filter_2D(1,1,padding,{{1,1,1},{1,1,1},{1,1,1}});
+    //std::vector<std::vector<double>> result = Filter_2D(1,1,padding,{{1,1,1},{1,1,1},{1,1,1}});
 
-    display_array(result);
+    //display_array(result);
 
 
     Output_layer outputLayer(2,2,"MSE","none");
-    Trainer trainer("/home/tim/Tim/CNN_folder/CNNs/Pictures_Testing/",{"bars_","circle_","pipe_"},{{1,4},{1,5},{1,6}},400,3,1000,0.1,outputLayer);
+    Trainer trainer("/home/tim/Tim/CNN_folder/CNNs/Pictures_Testing/",{"circle_","pipe_"},{{1,5},{1,5}},50,2,3000,0.3,outputLayer);
 
     std::vector<std::vector<double>> jjas = {{1,2},{1,2,3}};
 
-    trainer.initialize_max_poolers({1,2,3},{1,2,3},{1,2,3});
-    trainer.initialize_filter_layers({3,3,3},{1,1,1},{1,1,1},{"sigmoid","sigmoid","sigmoid"},{1,5,10},{5,10,15});
-    trainer.initialize_fullys({15,10,5},{10,5,2},{"relu","relu","relu"});
-
+    trainer.initialize_max_poolers({10,5,1},{0,0,0},{10,5,1});
+    trainer.initialize_filter_layers({3,3,3},{1,1,1},{1,1,1},{"sigmoid","sigmoid","sigmoid"},{1,4,8},{4,8,10});
+    trainer.initialize_fullys({10,8},{8,2},{"relu","relu"});
+    trainer.setter_learning_rate(0.05);
     trainer.get_features();
+    trainer.set_labels({{1,0},{0,1}});
+
+    trainer.start_Training();
+
+    image = imread("/home/tim/Tim/CNN_folder/CNNs/Pictures_Testing/circle_6.png", cv::IMREAD_COLOR);
+    cv::Mat grey_feature;
+    cvtColor(image, grey_image, cv::COLOR_BGR2GRAY);
+    resize(grey_image, grey_feature, cv::Size(50,50), cv::INTER_LINEAR);
+    trainer.classification(conversion_to_std_vector(grey_feature));
 
 
 
